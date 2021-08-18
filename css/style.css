@@ -10857,9 +10857,9 @@ header .clearFloats {
   position: absolute;
   color: white;
   margin-left: 10px;
-  z-index: 100;
+  z-index: 9999;
   top: 10px;
-  left: 240px;
+  left: 30%;
   padding-top: 5px;
 }
 
@@ -10883,7 +10883,7 @@ header .clearFloats {
   margin-left: 10px;
   z-index: 9999;
   top: 10px;
-  left: 240px;
+  left: 35%;
   padding-top: 5px;
 }
 
@@ -11191,23 +11191,12 @@ header .clearFloats {
   .gridG123 .casilla2d a img {
     position: absolute;
   }
-
-  .articuloContacto {
-    width: 100%;
-    margin: 5px;
-  }
-  .articuloContacto .datos h1, .articuloContacto .datos .h1 {
-    font-size: 1.5rem;
-  }
-  .articuloContacto .datos h2, .articuloContacto .datos .h2 {
-    font-size: 0.9em;
-  }
 }
 /* 0px A 480px ---------------------*/
 @media only screen and (min-width: 0px) and (max-width: 480px) {
   .h1Index,
 .h1Galerias {
-    left: 225px;
+    left: 230px;
   }
 
   .gridG123 {
@@ -11269,6 +11258,18 @@ header .clearFloats {
     object-position: center;
     object-fit: cover;
   }
+
+  .flexWrapContacto .articuloContacto .about {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  .flexWrapContacto .articuloContacto .about h2, .flexWrapContacto .articuloContacto .about .h2 {
+    margin: 0;
+  }
+  .flexWrapContacto .articuloContacto .about h3, .flexWrapContacto .articuloContacto .about .h3 {
+    margin: 5px 15px;
+  }
 }
 @media only screen and (min-width: 0px) and (max-width: 991px) {
   .navIndex {
@@ -11279,17 +11280,58 @@ header .clearFloats {
     padding: 0 1.1rem 0 0.8rem;
   }
 }
-@media only screen and (min-width: 0px) and (max-width: 900px) {
-  .about {
+@media only screen and (min-width: 800px) and (max-width: 1100px) {
+  .h1Galerias {
+    position: absolute;
+    color: black;
+    margin-left: 10px;
+    z-index: 9999;
+    top: 10px;
+    left: 30%;
+    padding-top: 5px;
+  }
+
+  .h1Index {
+    position: absolute;
+    color: white;
+    margin-left: 10px;
+    z-index: 9999;
+    top: 10px;
+    left: 27%;
+    padding-top: 5px;
+  }
+
+  .flexWrapContacto .articuloContacto .about {
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
   }
-  .about h1, .about .h1 {
+  .flexWrapContacto .articuloContacto .about h2, .flexWrapContacto .articuloContacto .about .h2 {
     margin: 0;
   }
-  .about h2, .about .h2 {
+  .flexWrapContacto .articuloContacto .about h3, .flexWrapContacto .articuloContacto .about .h3 {
     margin: 5px 15px;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 800px) {
+  .h1Galerias {
+    position: absolute;
+    color: black;
+    margin-left: 10px;
+    z-index: 9999;
+    top: 10px;
+    left: 50%;
+    padding-top: 5px;
+  }
+
+  .h1Index {
+    position: absolute;
+    color: white;
+    margin-left: 10px;
+    z-index: 9999;
+    top: 10px;
+    left: 50%;
+    padding-top: 5px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 800px) {

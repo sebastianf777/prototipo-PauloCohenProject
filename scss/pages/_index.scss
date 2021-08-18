@@ -39,7 +39,7 @@
 }
 
 .h1Index{
-    @include h1(absolute, white, 10px, 100, 10px, 240px, 5px)
+    @include h1(absolute, white, 10px, 9999, 10px, 30%, 5px)
 }
 
 .footerIndex {

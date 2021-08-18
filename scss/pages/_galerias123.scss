@@ -5,7 +5,7 @@
 $width: 100%;
 
 .h1Galerias{
-    @include h1(absolute, black, 10px, 9999, 10px, 240px, 5px)
+    @include h1(absolute, black, 10px, 9999, 10px, 35%, 5px)
 }
 
 /* CSS GRID */
