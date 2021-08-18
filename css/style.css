@@ -11052,6 +11052,7 @@ header .clearFloats {
   text-align: start;
   color: black;
   margin: 0px 30px 10px 20px;
+  cursor: default;
 }
 .flexWrapContacto .articuloContacto .about h2 #Contact a, .flexWrapContacto .articuloContacto .about .h2 #Contact a {
   color: grey;
@@ -11102,6 +11103,7 @@ header .clearFloats {
   text-align: start;
   color: black;
   margin: 10px;
+  cursor: default;
 }
 .flexWrapContacto .sectionContacto .datos h2 #About a, .flexWrapContacto .sectionContacto .datos .h2 #About a {
   color: grey;

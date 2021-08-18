@@ -48,6 +48,7 @@
             h2 {
                 @include textModel($font*2.5, start, black);
                 margin: 0px 30px 10px 20px;
+                cursor: default;
                 #Contact a{
                     color: grey;
                     text-decoration: none;
@@ -102,6 +103,7 @@
         
             @include textModel ($font*2, start, black);
             margin: 10px;
+            cursor: default;
             #About a{
                 color: grey;
                 text-decoration: none;
