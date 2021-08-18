@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Meta palabras clave -->
+  <meta name="keywords" content="Paulo Cohen, Fotógrafo, Fotografías, Profesional, Profesionales, Portfolio, Freelance, Independiente, 
+    Cartera, Trabajos, Freelancer, Fotos, Photography, Photos, Photographer, Professional, Camera, Paulo, Cohen,
+     Work, Moon, Luna ">
+
+  <!-- Meta descripción -->
+  <meta name="description" content="Bienvenido a mi sitio web, mi nombre es Paulo Cohen y aquí puedes acceder a mi portafolio profesional.
+      En esta página principal destaco mis trabajos mas preciados y mejor valorados">
+
+  <!-- Meta copyright -->
+  <meta name="copyright" content="Sebastian Fontana Project">
+
+  <!-- Meta autor -->
+  <meta name="author" content="Sebastian Fontana">
+
+  <!-- Meta OG -->
+  <meta property="og:title" content="Home - Paulo Cohen">
+  <meta property="og:description" content="Bienvenido a mi sitio web, mi nombre es Paulo Cohen y aquí puedes acceder a mi portafolio profesional.
+  En esta página principal destaco mis trabajos mas preciados y mejor valorados">
+  <meta property="og:site_name" content="Paulo Cohen Photographer">
+  <meta property="og:image" content="https://cdn.pixabay.com/photo/2016/11/18/19/15/adult-1836485_960_720.jpg">
+  <meta property="og:locale" content="es_ES">
+
+  <!-- CSS Propio -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- termina CSS -->
+  <!-- Icono para título -->
+
+  <link rel="shortcut icon" type="image/x-icon" href="./img/icons8-camera-16.png" />
+  <title>Paulo Cohen</title>
+
+</head>
+
+<!-- termina head -->
+<!-- Empieza Body -->
+
+<body>
+
+  <!-- Empieza Header -->
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <header>
+      <nav class="navIndex navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+          <img class="logoIndex" src="img/logo.png" alt="">
+        </a>
+        <h1 class="h1Index">Favoritos</h1>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ms-auto mb-lg-0">
+            <li class="nav-item">
+              <a class="navLinkIndex" href="galeria1.html">nature</a>
+            </li>
+            <li class="nav-item">
+              <a class="navLinkIndex" href="galeria2.html">people</a>
+            </li>
+            <li class="nav-item">
+              <a class="navLinkIndex " href="galeria3.html">animals</a>
+            </li>
+            <li class="nav-item">
+              <a class="navLinkIndex" href="contacto.html">contact/about</a>
+            </li>
+            <li class="nav-item">
+              <a class="navLinkIndex " href="https://www.facebook.com/profile.php?id=100071367615701">
+                <img class="redesIndex" src="img/face.png" alt="Facebook logo" />
+              </a>
+            </li>
+            </li>
+            <li class="nav-item">
+              <a class="navLinkIndex" href="https://www.instagram.com/p/CSsGnFDLe0z/?utm_source=ig_web_copy_link">
+                <img class="redesIndex" src="img/insta.png" alt="Instagram logo" />
+              </a>
+            </li>
+            </li>
+            <li class="nav-item">
+              <a class="navLinkIndex"
+                href="https://www.linkedin.com/posts/sebastianfontana_ya-cada-vez-falta-menos-a-mi-proyecto-ejemplo-activity-6833416434039693312-leCI">
+                <img class="redesIndex" src="img/linkedin.png" alt="Linkedin logo" />
+              </a>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="clearFloats"></div>
+
+    <!-- termina header -->
+    <!-- Empieza CarruselFondo -->
+    <!-- Empieza Articulo -->
+    <div class="containerIndex container-fluid ">
+      <article>
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+            aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/Nature11.jpg" class="d-block mw-100 fondo" alt="Foto fondo luna">
+          </div>
+          <div class="carousel-item">
+            <img src="img/People11.jpg" class="d-block mw-100 fondo" alt="Foto fondo bebé">
+          </div>
+          <div class="carousel-item">
+            <img src="img/Animals6.jpg" class="d-block mw-100 fondo" alt="Foto fondo loro">
+          </div>
+          <div class="carousel-item">
+            <img src="img/People4.jpg" class="d-block mw-100 fondo" alt="Foto fondo chica">
+          </div>
+          <div class="carousel-item">
+            <img src="img/Nature4.jpg" class="d-block mw-100 fondo" alt="Foto fondo montaña">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </article>
+
+      <!-- termina artículo -->
+      <!-- Empieza Footer -->
+
+      <footer class="footerIndex">
+        <h4>Copyright © Paulo Cohen 2021</h4>
+      </footer>
+      <!-- termina footer -->
+
+    </div>
+  </div>
+
+  <!-- termina CarrouselFondo -->
+
+  <!-- JAVA -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+
+</body>
+
+<!-- Termina Body -->
+
+</html>

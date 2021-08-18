@@ -1,0 +1,18 @@
+@import "../../bootstrap/scss/bootstrap.scss";
+
+$controles-slider: (prev: none,
+    next: none);
+
+@each $carousel-control,
+$display in $controles-slider {
+    .carousel-control-#{$carousel-control} {
+        display: $display;
+    }
+
+}
+
+.navIndex {
+    &.navbar-light .navbar-toggler {
+        filter: invert(1);
+    }
+}
