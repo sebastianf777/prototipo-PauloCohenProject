@@ -132,8 +132,7 @@ $width: 100%;
 
     .dot {
         @include divSize(80%, 80%, 100%);
-        transform: scale(1);
-        transition: all 0.3s ease-in;
+
 
         &:hover {
 
@@ -141,6 +140,11 @@ $width: 100%;
             transition: all 0.3s ease-in;
             box-sizing: content-box;
 
+        }
+        &:not(:hover){
+            transform: scale(1);
+            transition: all 0.3s ease-in;
+            filter: grayscale(1);
         }
     }
 

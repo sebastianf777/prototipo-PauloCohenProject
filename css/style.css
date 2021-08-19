@@ -11000,13 +11000,16 @@ header .clearFloats {
   height: 80%;
   width: 80%;
   max-width: 100%;
-  transform: scale(1);
-  transition: all 0.3s ease-in;
 }
 .gridG123 .dot:hover {
   transform: scale(1.05);
   transition: all 0.3s ease-in;
   box-sizing: content-box;
+}
+.gridG123 .dot:not(:hover) {
+  transform: scale(1);
+  transition: all 0.3s ease-in;
+  filter: grayscale(1);
 }
 
 /* -------------- */
