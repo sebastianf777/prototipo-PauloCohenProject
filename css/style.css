@@ -10859,8 +10859,9 @@ header .clearFloats {
   margin-left: 10px;
   z-index: 9999;
   top: 10px;
-  left: 30%;
+  left: 34%;
   padding-top: 5px;
+  cursor: default;
 }
 
 .footerIndex {
@@ -10885,6 +10886,7 @@ header .clearFloats {
   top: 10px;
   left: 35%;
   padding-top: 5px;
+  cursor: default;
 }
 
 /* CSS GRID */
@@ -11278,6 +11280,19 @@ header .clearFloats {
 
   header .container-fluid, header .container-sm, header .container-md, header .container-lg, header .container-xl, header .container-xxl {
     padding: 0 1.1rem 0 0.8rem;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 990px) {
+  .ms-auto {
+    margin-left: 2.5rem !important;
+  }
+
+  .navIndex {
+    padding: 0.45rem 1.77rem 2rem 0rem;
+  }
+
+  header .container-fluid, header .container-sm, header .container-md, header .container-lg, header .container-xl, header .container-xxl {
+    padding: 0 1.1rem 0 0rem;
   }
 }
 @media only screen and (min-width: 800px) and (max-width: 1100px) {
