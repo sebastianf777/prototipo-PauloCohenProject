@@ -11206,6 +11206,10 @@ header .clearFloats {
 }
 /* 0px A 480px ---------------------*/
 @media only screen and (min-width: 0px) and (max-width: 480px) {
+  h3, .h3 {
+    font-size: 1.3rem !important;
+  }
+
   .h1Galerias {
     left: 210px;
   }
