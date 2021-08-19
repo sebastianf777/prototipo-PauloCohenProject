@@ -19,7 +19,7 @@
         padding: 0;
 
         .galeriaSlide {
-            width: 96.5%;
+            width: 100%;
             grid-area: 1 / 1 / 4 / 4;
             padding: 0;
             max-height: 70%;
@@ -27,10 +27,12 @@
 
         .dot {
             width: 90%;
+            padding-left: 10px;
 
             &:hover {
 
                 transform: scale(1.05);
+                overflow: hidden;
             }
 
         }
@@ -88,6 +90,18 @@
         }
 
     }
+
+    ///Contacto
+    .flexWrapContacto {
+        margin-left: 20px;
+
+        .articuloContacto {
+            .imagenContacto {
+                height: auto;
+
+            }
+        }
+    }
 }
 
 /* 0px A 480px ---------------------*/
@@ -95,9 +109,12 @@
 @media only screen and (min-width: 0px) and (max-width: 480px) {
 
 
-    .h1Index,
     .h1Galerias {
-        left: 230px;
+        left: 210px;
+    }
+
+    .h1Index {
+        left: 205px;
     }
 
     ///////////////////
@@ -183,22 +200,43 @@
     }
 
     //Contacto
-    .flexWrapContacto .articuloContacto .about {
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-items: center;
+    .flexWrapContacto {
+        padding-top: 0;
 
-        h2 {
-            margin: 0;
+        .articuloContacto {
+
+            .imagenContacto {
+                height: 400px !important;
+            }
+
+            .about {
+
+
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-items: center;
+
+                h2 {
+                    margin: 0;
+                }
+
+                h3 {
+                    margin: 5px 15px;
+                }
+            }
         }
 
-        h3 {
-            margin: 5px 15px;
+        .sectionContacto {
+            margin-top: 5px;
+
+            .datos h2 {
+                text-align: center;
+            }
         }
     }
 }
 
-//Index solo
+//Index
 
 @media only screen and (min-width: 0px) and (max-width: 991px) {
 
@@ -217,14 +255,18 @@
 //de todos los html
 
 @media only screen and (min-width: 0px) and (max-width: 990px) {
+    .navbar-toggler {
+        margin-right: 30px;
+    }
 
     .ms-auto {
         margin-left: 2.5rem !important;
     }
+
     .navIndex {
         padding: .45rem 1.77rem 2rem 0rem;
     }
-    
+
     header .container-fluid {
         padding: 0 1.1rem 0 0rem;
     }
@@ -235,84 +277,93 @@
 
 @media only screen and (min-width: 800px) and (max-width: 1100px) {
 
-.h1Galerias{
-    @include h1(absolute, black, 10px, 9999, 10px, 30%, 5px)
+    .h1Galerias {
+        @include h1(absolute, black, 10px, 9999, 10px, 30%, 5px)
+    }
 
-}
-.h1Index{
-    @include h1(absolute, white, 10px, 9999, 10px, 27%, 5px)
-}
+    .h1Index {
+        @include h1(absolute, white, 10px, 9999, 10px, 27%, 5px)
+    }
 
     /////////////
     //Contacto
     ////////////
 
-    .flexWrapContacto .articuloContacto .about {
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-items: center;
-
-        h2 {
-            margin: 0;
-        }
-
-        h3 {
-            margin: 5px 15px;
-        }
-    }
-}
-@media only screen and (min-width: 481px) and (max-width: 800px) {
-
-
-    .h1Galerias{
-        @include h1(absolute, black, 10px, 9999, 10px, 50%, 5px)
-    }
-    .h1Index{
-        @include h1(absolute, white, 10px, 9999, 10px, 50%, 5px)
-    }
-}
-@media only screen and (min-width: 0px) and (max-width: 800px) {
-
     .flexWrapContacto {
-        min-width: 360px;
-        margin: 5px;
 
-        .articuloContacto {
-            min-width: 360px;
-            margin: 0 10px;
+        .articuloContacto .about {
+            flex-wrap: wrap;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
 
-            .imagenContacto {
+            h2 {
                 margin: 0;
-                width: 95%;
             }
 
-            .about {
-                width: 100%;
-                max-width: 100%;
-                
+            h3 {
+                margin: 5px 15px;
             }
         }
 
-        .sectionContacto {
-            .containerContacto {
-                display: flex;
-                flex-wrap: wrap;
-                flex-direction: row;
-                justify-content: center;
+    }
+}
+    @media only screen and (min-width: 481px) and (max-width: 800px) {
 
-                .cont1,
-                .cont2,
-                .cont3,
-                .cont4 {
-                    width: 45%;
-                    margin-top: 10px;
+
+        .h1Galerias {
+            @include h1(absolute, black, 10px, 9999, 10px, 50%, 5px)
+        }
+
+        .h1Index {
+            @include h1(absolute, white, 10px, 9999, 10px, 50%, 5px)
+        }
+    }
+
+    @media only screen and (min-width: 0px) and (max-width: 800px) {
+
+        .flexWrapContacto {
+            min-width: 360px;
+            margin: 5px;
+
+            .articuloContacto {
+                min-width: 360px;
+                margin: 0 10px;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .imagenContacto {
+                    margin: 0;
+                    width: 95%;
+                    height: 500px;
+                }
+
+                .about {
+                    margin-top: 20px;
+                    width: 100%;
+                    max-width: 100%;
+
                 }
             }
 
-        }
+            .sectionContacto {
+                margin-top: 0 ;
+                .containerContacto {
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: row;
+                    justify-content: center;
 
+                    .cont1,
+                    .cont2,
+                    .cont3,
+                    .cont4 {
+                        width: 45%;
+                        margin-top: 10px;
+                    }
+                }
+
+            }
+
+        }
     }
-}

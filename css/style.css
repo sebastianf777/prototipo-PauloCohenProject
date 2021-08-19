@@ -11021,7 +11021,7 @@ header .clearFloats {
 }
 
 .flexWrapContacto {
-  padding-top: 20px;
+  padding-top: 10px;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -11041,6 +11041,7 @@ header .clearFloats {
   min-width: 350px;
   background-image: url("./../img/Fotógrafo.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: right;
 }
 .flexWrapContacto .articuloContacto .about {
@@ -11143,16 +11144,18 @@ header .clearFloats {
     padding: 0;
   }
   .gridG123 .galeriaSlide {
-    width: 96.5%;
+    width: 100%;
     grid-area: 1/1/4/4;
     padding: 0;
     max-height: 70%;
   }
   .gridG123 .dot {
     width: 90%;
+    padding-left: 10px;
   }
   .gridG123 .dot:hover {
     transform: scale(1.05);
+    overflow: hidden;
   }
   .gridG123 .casilla1a {
     grid-area: 4/1/5/2;
@@ -11193,12 +11196,22 @@ header .clearFloats {
   .gridG123 .casilla2d a img {
     position: absolute;
   }
+
+  .flexWrapContacto {
+    margin-left: 20px;
+  }
+  .flexWrapContacto .articuloContacto .imagenContacto {
+    height: auto;
+  }
 }
 /* 0px A 480px ---------------------*/
 @media only screen and (min-width: 0px) and (max-width: 480px) {
-  .h1Index,
-.h1Galerias {
-    left: 230px;
+  .h1Galerias {
+    left: 210px;
+  }
+
+  .h1Index {
+    left: 205px;
   }
 
   .gridG123 {
@@ -11261,6 +11274,12 @@ header .clearFloats {
     object-fit: cover;
   }
 
+  .flexWrapContacto {
+    padding-top: 0;
+  }
+  .flexWrapContacto .articuloContacto .imagenContacto {
+    height: 400px !important;
+  }
   .flexWrapContacto .articuloContacto .about {
     flex-wrap: wrap;
     flex-direction: column;
@@ -11271,6 +11290,12 @@ header .clearFloats {
   }
   .flexWrapContacto .articuloContacto .about h3, .flexWrapContacto .articuloContacto .about .h3 {
     margin: 5px 15px;
+  }
+  .flexWrapContacto .sectionContacto {
+    margin-top: 5px;
+  }
+  .flexWrapContacto .sectionContacto .datos h2, .flexWrapContacto .sectionContacto .datos .h2 {
+    text-align: center;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 991px) {
@@ -11283,6 +11308,10 @@ header .clearFloats {
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 990px) {
+  .navbar-toggler {
+    margin-right: 30px;
+  }
+
   .ms-auto {
     margin-left: 2.5rem !important;
   }
@@ -11364,10 +11393,15 @@ header .clearFloats {
   .flexWrapContacto .articuloContacto .imagenContacto {
     margin: 0;
     width: 95%;
+    height: 500px;
   }
   .flexWrapContacto .articuloContacto .about {
+    margin-top: 20px;
     width: 100%;
     max-width: 100%;
+  }
+  .flexWrapContacto .sectionContacto {
+    margin-top: 0;
   }
   .flexWrapContacto .sectionContacto .containerContacto {
     display: flex;

@@ -12,7 +12,7 @@
 //Artículo Contacto
 
 .flexWrapContacto {
-    padding-top: 20px;
+    padding-top: 10px;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -33,6 +33,7 @@
             min-width: 350px;
             background-image: url("./../img/Fotógrafo.jpg");
             background-size: cover;
+            background-repeat: no-repeat;
             background-position: right;
 
         }
