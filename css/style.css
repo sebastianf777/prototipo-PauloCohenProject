@@ -11075,7 +11075,11 @@ header .clearFloats {
   margin: 40px 20px 0 20px;
 }
 .flexWrapContacto .sectionContacto .últimosTrabajos {
-  color: gray;
+  font-size: 2rem;
+  text-align: start;
+  color: grey;
+  margin: 0 0 0 50px;
+  cursor: default;
 }
 .flexWrapContacto .sectionContacto .containerContacto {
   width: 100%;
@@ -11303,6 +11307,10 @@ header .clearFloats {
   }
   .flexWrapContacto .sectionContacto {
     margin-top: 5px;
+  }
+  .flexWrapContacto .sectionContacto .últimosTrabajos {
+    margin: 5px 0 0 0;
+    text-align: center;
   }
   .flexWrapContacto .sectionContacto .datos h2, .flexWrapContacto .sectionContacto .datos .h2 {
     text-align: center;
