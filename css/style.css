@@ -11074,6 +11074,9 @@ header .clearFloats {
   width: 100%;
   margin: 40px 20px 0 20px;
 }
+.flexWrapContacto .sectionContacto .últimosTrabajos {
+  color: gray;
+}
 .flexWrapContacto .sectionContacto .containerContacto {
   width: 100%;
   display: flex;
