@@ -18,7 +18,10 @@
     width: $width;
     max-width: $maxWidht;
 }
-
+@mixin flexCenter($flex, $center){
+    display: $flex;
+    justify-content: $center;
+}
 
 $font: 1rem;
 
