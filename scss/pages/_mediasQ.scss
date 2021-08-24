@@ -358,10 +358,9 @@ h3{
             .sectionContacto {
                 margin-top: 0 ;
                 .containerContacto {
-                    display: flex;
+                    @include flexCenter(flex, center);
                     flex-wrap: wrap;
                     flex-direction: row;
-                    justify-content: center;
 
                     .cont1,
                     .cont2,
