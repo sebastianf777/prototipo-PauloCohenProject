@@ -10816,7 +10816,7 @@ header .clearFloats {
   background: none;
 }
 .footers h4, .footers .h4 {
-  font-size: 10px;
+  font-size: 13px;
 }
 
 /* -------------- */
@@ -11007,7 +11007,6 @@ header .clearFloats {
   box-sizing: content-box;
 }
 .gridG123 .dot:not(:hover) {
-  transform: scale(1);
   transition: all 0.3s ease-in;
   filter: grayscale(1);
 }
@@ -11042,7 +11041,7 @@ header .clearFloats {
   height: 400px;
   width: 40%;
   min-width: 350px;
-  background-image: url("../img/Fotografo.webp");
+  background-image: url("../img/Fotografo (2).webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right;

@@ -142,7 +142,7 @@ $width: 100%;
 
         }
         &:not(:hover){
-            transform: scale(1);
+            // transform: scale(1);
             transition: all 0.3s ease-in;
             filter: grayscale(1);
         }
