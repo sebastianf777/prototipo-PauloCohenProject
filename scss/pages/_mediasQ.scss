@@ -110,11 +110,12 @@
 
 @media only screen and (min-width: 0px) and (max-width: 480px) {
 
-//General
+    //General
 
-h3{
-    font-size: 1.3rem !important;
-}
+    h3 {
+        font-size: 1.3rem !important;
+    }
+
     .h1Galerias {
         left: 160px;
         top: 13px;
@@ -126,14 +127,17 @@ h3{
         top: 13px;
         font-size: 20px;
     }
+
     /////////////
     //Index
     ////////////
-    .navIndex div ul li .navLinkIndex, .navbar-nav .nav-link{
+    .navIndex div ul li .navLinkIndex,
+    .navbar-nav .nav-link {
         font-size: 16px;
         padding: 0.5rem 1.5rem;
     }
-    .navIndex a .logoIndex{
+
+    .navIndex a .logoIndex {
         height: 30px;
     }
 
@@ -141,17 +145,21 @@ h3{
         margin-left: -20px;
 
     }
-    header .logo{
+
+    header .logo {
         height: 30px;
 
     }
+
     .navbar-toggler {
         margin-right: 10px;
     }
-    .togglerIndex{
+
+    .togglerIndex {
         margin-right: 0px;
 
     }
+
     ///////////////////
     //Galerias 1, 2 y 3
     ///////////////////
@@ -170,6 +178,7 @@ h3{
             width: 100%;
             margin: 0;
             align-items: center;
+            padding-bottom: 0;
 
         }
 
@@ -263,11 +272,13 @@ h3{
 
         .sectionContacto {
             margin-top: 5px;
-            .últimosTrabajos{
+
+            .últimosTrabajos {
                 margin: 5px 0 0 0;
                 text-align: center;
             }
-            .datos h2  {
+
+            .datos h2 {
                 text-align: center;
             }
         }
@@ -345,62 +356,73 @@ h3{
 
     }
 }
-    @media only screen and (min-width: 481px) and (max-width: 800px) {
+
+//Index
+@media only screen and (min-width: 0px) and (max-width: 1100px) {
+
+    .containerIndex div .carousel-item img{
+        min-height: 1024px !important;
+   
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 800px) {
 
 
-        .h1Galerias {
-            @include h1(absolute, black, 10px, 9999, 10px, 50%, 5px)
-        }
-
-        .h1Index {
-            @include h1(absolute, white, 10px, 9999, 10px, 50%, 5px)
-        }
+    .h1Galerias {
+        @include h1(absolute, black, 10px, 9999, 10px, 50%, 5px)
     }
 
-    @media only screen and (min-width: 0px) and (max-width: 800px) {
+    .h1Index {
+        @include h1(absolute, white, 10px, 9999, 10px, 50%, 5px)
+    }
+}
 
-        .flexWrapContacto {
+@media only screen and (min-width: 0px) and (max-width: 800px) {
+
+    .flexWrapContacto {
+        min-width: 360px;
+        margin: 5px;
+
+        .articuloContacto {
             min-width: 360px;
-            margin: 5px;
+            margin: 0 10px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
 
-            .articuloContacto {
-                min-width: 360px;
-                margin: 0 10px;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-
-                .imagenContacto {
-                    margin: 0;
-                    width: 95%;
-                    height: 500px;
-                }
-
-                .about {
-                    margin-top: 20px;
-                    width: 100%;
-                    max-width: 100%;
-
-                }
+            .imagenContacto {
+                margin: 0;
+                width: 95%;
+                height: 500px;
             }
 
-            .sectionContacto {
-                margin-top: 0 ;
-                .containerContacto {
-                    @include flexCenter(flex, center);
-                    flex-wrap: wrap;
-                    flex-direction: row;
+            .about {
+                margin-top: 20px;
+                width: 100%;
+                max-width: 100%;
 
-                    .cont1,
-                    .cont2,
-                    .cont3,
-                    .cont4 {
-                        width: 45%;
-                        margin-top: 10px;
-                    }
+            }
+        }
+
+        .sectionContacto {
+            margin-top: 0;
+
+            .containerContacto {
+                @include flexCenter(flex, center);
+                flex-wrap: wrap;
+                flex-direction: row;
+
+                .cont1,
+                .cont2,
+                .cont3,
+                .cont4 {
+                    width: 45%;
+                    margin-top: 10px;
                 }
-
             }
 
         }
+
     }
+}

@@ -10867,7 +10867,7 @@ header .clearFloats {
 .footerIndex {
   color: white;
   position: fixed;
-  bottom: 0%;
+  bottom: 0;
   left: 3%;
   background: none;
 }
@@ -11232,7 +11232,8 @@ header .clearFloats {
     font-size: 20px;
   }
 
-  .navIndex div ul li .navLinkIndex, .navbar-nav .nav-link {
+  .navIndex div ul li .navLinkIndex,
+.navbar-nav .nav-link {
     font-size: 16px;
     padding: 0.5rem 1.5rem;
   }
@@ -11270,6 +11271,7 @@ header .clearFloats {
     width: 100%;
     margin: 0;
     align-items: center;
+    padding-bottom: 0;
   }
   .gridG123 .dot {
     width: 100%;
@@ -11402,6 +11404,11 @@ header .clearFloats {
   }
   .flexWrapContacto .articuloContacto .about h3, .flexWrapContacto .articuloContacto .about .h3 {
     margin: 5px 15px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 1100px) {
+  .containerIndex div .carousel-item img {
+    min-height: 1024px !important;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 800px) {
