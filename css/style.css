@@ -11211,10 +11211,13 @@ header .clearFloats {
     margin-left: 20px;
   }
   .flexWrapContacto .articuloContacto .imagenContacto {
-    height: 400px !important;
     margin: 0 5px;
     width: 80%;
     min-width: 200px;
+  }
+  .flexWrapContacto .articuloContacto .about h3, .flexWrapContacto .articuloContacto .about .h3 {
+    margin: 0 20px 5px 20px;
+    font-size: 1.1rem;
   }
 }
 /* 0px A 480px ---------------------*/
@@ -11445,12 +11448,12 @@ header .clearFloats {
     padding-top: 5px;
   }
 }
-@media only screen and (min-width: 0px) and (max-width: 800px) {
+@media only screen and (min-width: 0px) and (max-width: 918px) {
   .flexWrapContacto {
     margin: 5px;
   }
   .flexWrapContacto .articuloContacto {
-    margin: 0 10px;
+    margin: 0 30px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
