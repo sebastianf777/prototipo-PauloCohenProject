@@ -11042,7 +11042,7 @@ header .clearFloats {
   height: 400px;
   width: 40%;
   min-width: 350px;
-  background-image: url("./../img/Fotógrafo.jpg");
+  background-image: url("../img/Fotografo.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
@@ -11423,9 +11423,9 @@ header .clearFloats {
   }
   .flexWrapContacto .sectionContacto .containerContacto {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
   }
   .flexWrapContacto .sectionContacto .containerContacto .cont1,
 .flexWrapContacto .sectionContacto .containerContacto .cont2,
