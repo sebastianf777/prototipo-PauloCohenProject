@@ -97,8 +97,11 @@
 
         .articuloContacto {
             .imagenContacto {
-                height: auto;
 
+                height: 400px !important;
+                margin: 0 5px;
+                width: 80%;
+                min-width: 200px;
             }
         }
     }
@@ -112,10 +115,6 @@
 
     //General
 
-    h3 {
-        font-size: 1.3rem !important;
-    }
-
     .h1Galerias {
         left: 160px;
         top: 13px;
@@ -127,6 +126,14 @@
         top: 13px;
         font-size: 20px;
     }
+    h2{
+        font-size: 1.3rem !important;
+    }
+    h3 {
+        font-size: 1.0rem !important;
+    }
+
+
 
     /////////////
     //Index
@@ -248,9 +255,13 @@
         padding-top: 0;
 
         .articuloContacto {
+            margin: 0;
 
             .imagenContacto {
                 height: 400px !important;
+                margin: 0 5px;
+                width: 80%;
+                min-width: 200px;
             }
 
             .about {
@@ -360,9 +371,9 @@
 //Index
 @media only screen and (min-width: 0px) and (max-width: 1100px) {
 
-    .containerIndex div .carousel-item img{
+    .containerIndex div .carousel-item img {
         min-height: 1024px !important;
-   
+
     }
 }
 
@@ -378,24 +389,22 @@
     }
 }
 
+//Contacto
+
 @media only screen and (min-width: 0px) and (max-width: 800px) {
 
     .flexWrapContacto {
-        min-width: 360px;
         margin: 5px;
 
         .articuloContacto {
-            min-width: 360px;
             margin: 0 10px;
             flex-direction: column;
             justify-content: center;
             align-items: center;
 
-            .imagenContacto {
-                margin: 0;
-                width: 95%;
-                height: 500px;
-            }
+            // .imagenContacto {
+
+            // }
 
             .about {
                 margin-top: 20px;

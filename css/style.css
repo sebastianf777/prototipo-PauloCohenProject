@@ -11211,15 +11211,14 @@ header .clearFloats {
     margin-left: 20px;
   }
   .flexWrapContacto .articuloContacto .imagenContacto {
-    height: auto;
+    height: 400px !important;
+    margin: 0 5px;
+    width: 80%;
+    min-width: 200px;
   }
 }
 /* 0px A 480px ---------------------*/
 @media only screen and (min-width: 0px) and (max-width: 480px) {
-  h3, .h3 {
-    font-size: 1.3rem !important;
-  }
-
   .h1Galerias {
     left: 160px;
     top: 13px;
@@ -11230,6 +11229,14 @@ header .clearFloats {
     left: 150px;
     top: 13px;
     font-size: 20px;
+  }
+
+  h2, .h2 {
+    font-size: 1.3rem !important;
+  }
+
+  h3, .h3 {
+    font-size: 1rem !important;
   }
 
   .navIndex div ul li .navLinkIndex,
@@ -11322,8 +11329,14 @@ header .clearFloats {
   .flexWrapContacto {
     padding-top: 0;
   }
+  .flexWrapContacto .articuloContacto {
+    margin: 0;
+  }
   .flexWrapContacto .articuloContacto .imagenContacto {
     height: 400px !important;
+    margin: 0 5px;
+    width: 80%;
+    min-width: 200px;
   }
   .flexWrapContacto .articuloContacto .about {
     flex-wrap: wrap;
@@ -11434,20 +11447,13 @@ header .clearFloats {
 }
 @media only screen and (min-width: 0px) and (max-width: 800px) {
   .flexWrapContacto {
-    min-width: 360px;
     margin: 5px;
   }
   .flexWrapContacto .articuloContacto {
-    min-width: 360px;
     margin: 0 10px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  .flexWrapContacto .articuloContacto .imagenContacto {
-    margin: 0;
-    width: 95%;
-    height: 500px;
   }
   .flexWrapContacto .articuloContacto .about {
     margin-top: 20px;
