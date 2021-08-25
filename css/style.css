@@ -11221,11 +11221,40 @@ header .clearFloats {
   }
 
   .h1Galerias {
-    left: 210px;
+    left: 160px;
+    top: 13px;
+    font-size: 20px;
   }
 
   .h1Index {
-    left: 205px;
+    left: 150px;
+    top: 13px;
+    font-size: 20px;
+  }
+
+  .navIndex div ul li .navLinkIndex, .navbar-nav .nav-link {
+    font-size: 16px;
+    padding: 0.5rem 1.5rem;
+  }
+
+  .navIndex a .logoIndex {
+    height: 30px;
+  }
+
+  .navbar-brand {
+    margin-left: -20px;
+  }
+
+  header .logo {
+    height: 30px;
+  }
+
+  .navbar-toggler {
+    margin-right: 10px;
+  }
+
+  .togglerIndex {
+    margin-right: 0px;
   }
 
   .gridG123 {
@@ -11325,7 +11354,7 @@ header .clearFloats {
     padding: 0 1.1rem 0 0.8rem;
   }
 }
-@media only screen and (min-width: 0px) and (max-width: 990px) {
+@media only screen and (min-width: 481px) and (max-width: 990px) {
   .navbar-toggler {
     margin-right: 30px;
   }
