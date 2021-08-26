@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Meta palabras clave -->
-<meta name="keywords" content="Paulo Cohen, Fotógrafo, Fotografías, Profesional, Profesionales, Portfolio, Nature, Ocean, 
+    <meta name="keywords" content="Paulo Cohen, Fotógrafo, Fotografías, Profesional, Profesionales, Portfolio, Nature, Ocean, 
     paisajes, Trabajos, Trees, Fotos, Photography, Photos, Photographer, Professional, Sea, Paulo, Cohen,
      Bosque, Road, Mar ">
 
@@ -1121,11 +1122,14 @@
         }
     </style>
 
-    <!--  Icono  -->
-    <link rel="shortcut icon" type="image/x-icon" href="./img/icons8-camera-16.png" />
+    <!-- CSS Propio -->
     <noscript>
         <link rel="stylesheet" href="style.css"></noscript>
-    /* Título */
+
+    <!--  Icono  -->
+    <link rel="shortcut icon" type="image/x-icon" href="./img/icons8-camera-16.png" />
+
+    <!-- Título -->
     <title>Nature - Paulo Cohen</title>
 </head>
 
@@ -1273,7 +1277,6 @@
             slideshowContainer.addEventListener('mouseenter', pause)
             slideshowContainer.addEventListener('mouseleave', resume)
         })
-        // botones next y previous
         function plusSlides(n) {
             clearInterval(myTimer);
             if (n < 0) {
@@ -1282,7 +1285,6 @@
                 showSlides(slideIndex += 1);
             }
         }
-        //controla el slide y resetea el intervalo de ser necesario
         function currentSlide(n) {
             clearInterval(myTimer);
             myTimer = setInterval(function () {
@@ -1344,4 +1346,5 @@
     <!-- termina java -->
 
 </body>
+
 </html>
