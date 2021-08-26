@@ -6076,7 +6076,7 @@ header .container-fluid, header .container-sm, header .container-md, header .con
 }
 header .logo, header .logoIndex {
   transform: scale(0.6);
-  width: 100%;
+  width: 220px;
   height: 40px;
 }
 header .nav-link,
@@ -6123,7 +6123,6 @@ header .clearFloats {
   padding: 2.1rem 6rem 2rem 3rem;
 }
 .navIndex a .logoIndex {
-  height: 40px;
   cursor: default;
   filter: invert(1);
 }
@@ -6540,15 +6539,15 @@ header .clearFloats {
   }
 
   .navIndex a .logoIndex {
-    height: 30px;
+    transform: scale(0.5);
   }
 
   .navbar-brand {
-    margin-left: -20px;
+    margin-left: -30px;
   }
 
   header .logo {
-    height: 30px;
+    transform: scale(0.5);
   }
 
   .navbar-toggler {
