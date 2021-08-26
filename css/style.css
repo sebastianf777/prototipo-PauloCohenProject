@@ -6076,8 +6076,7 @@ header .container-fluid, header .container-sm, header .container-md, header .con
 }
 header .logo, header .logoIndex {
   transform: scale(0.6);
-}
-header .logo {
+  width: 100%;
   height: 40px;
 }
 header .nav-link,
