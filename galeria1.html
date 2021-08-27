@@ -1121,11 +1121,16 @@
             }
         }
     </style>
-
+    <script src="js/localCSS.js">
+    </script>
+    <script id="loadcss">
+        loadCSS("css/style.css", document.getElementById("loadcss"));
+    </script>
     <!-- CSS Propio -->
-    
+
     <noscript>
-        <link rel="stylesheet" href="css/style.css" media="print" onload="this.media='all'"></noscript>
+        <link rel="stylesheet" href="css/style.css" media="print" onload="this.media='all'; this.onload=null">
+        </noscript>
 
     <!--  Icono  -->
     <link rel="shortcut icon" type="image/x-icon" href="./img/icons8-camera-16.png" />
@@ -1333,7 +1338,7 @@
     </script>
 
     <!-- JAVA LoadCSS -->
-    <script>
+    <!-- <script>
         function loadCSS(e, t, n) {
             "use strict";
             var i = window.document.createElement("link");
@@ -1347,8 +1352,8 @@
             })
         }
         loadCSS('css/style.css');
-    </script>
-    <!-- termina java -->
+    </script> --> -->
+    <!-- termina java
 
 </body>
 
