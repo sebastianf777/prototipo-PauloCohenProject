@@ -29,8 +29,694 @@
     <meta property="og:image" content="https://cdn.pixabay.com/photo/2016/11/18/19/15/adult-1836485_960_720.jpg">
     <meta property="og:locale" content="es_ES">
 
+    <!-- Css Crítico -->
+    <style>
+        @charset "UTF-8";
+        @import url(https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap);
+
+        .container-fluid {
+            width: 100%;
+            padding-right: var(--bs-gutter-x, .75rem);
+            padding-left: var(--bs-gutter-x, .75rem);
+            margin-right: auto;
+            margin-left: auto
+        }
+
+        .collapse:not(.show) {
+            display: none
+        }
+
+        .nav-link {
+            display: block;
+            padding: .5rem 1rem;
+            color: #0d6efd;
+            text-decoration: none
+        }
+
+        .navbar {
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: .5rem;
+            padding-bottom: .5rem
+        }
+
+        .navbar>.container-fluid {
+            display: flex;
+            flex-wrap: inherit;
+            align-items: center;
+            justify-content: space-between
+        }
+
+        .navbar-brand {
+            padding-top: .3125rem;
+            padding-bottom: .3125rem;
+            margin-right: 1rem;
+            font-size: 1.25rem;
+            text-decoration: none;
+            white-space: nowrap
+        }
+
+        .navbar-nav {
+            display: flex;
+            flex-direction: column;
+            padding-left: 0;
+            margin-bottom: 0;
+            list-style: none
+        }
+
+        .navbar-nav .nav-link {
+            padding-right: 0;
+            padding-left: 0
+        }
+
+        .navbar-collapse {
+            flex-basis: 100%;
+            flex-grow: 1;
+            align-items: center
+        }
+
+        .navbar-toggler {
+            padding: .25rem .75rem;
+            font-size: 1.25rem;
+            line-height: 1;
+            background-color: transparent;
+            border: 1px solid transparent;
+            border-radius: .25rem
+        }
+
+        .navbar-toggler-icon {
+            display: inline-block;
+            width: 1.5em;
+            height: 1.5em;
+            vertical-align: middle;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100%
+        }
+
+        @media (min-width:992px) {
+            .navbar-expand-lg {
+                flex-wrap: nowrap;
+                justify-content: flex-start
+            }
+
+            .navbar-expand-lg .navbar-nav {
+                flex-direction: row
+            }
+
+            .navbar-expand-lg .navbar-nav .nav-link {
+                padding-right: .5rem;
+                padding-left: .5rem
+            }
+
+            .navbar-expand-lg .navbar-collapse {
+                display: flex !important;
+                flex-basis: auto
+            }
+
+            .navbar-expand-lg .navbar-toggler {
+                display: none
+            }
+        }
+
+        .navbar-light .navbar-brand {
+            color: rgba(0, 0, 0, .9)
+        }
+
+        .navbar-light .navbar-nav .nav-link {
+            color: rgba(0, 0, 0, .55)
+        }
+
+        .navbar-light .navbar-nav .nav-link.active {
+            color: rgba(0, 0, 0, .9)
+        }
+
+        .navbar-light .navbar-toggler {
+            color: rgba(0, 0, 0, .55);
+            border-color: rgba(0, 0, 0, .1)
+        }
+
+        .navbar-light .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+        }
+
+        .ms-auto {
+            margin-left: auto !important
+        }
+
+        .bg-white {
+            background-color: #fff !important
+        }
+
+        @media (min-width:992px) {
+            .mb-lg-0 {
+                margin-bottom: 0 !important
+            }
+        }
+
+        * {
+            font-family: "Kaushan Script", cursive;
+            font-weight: 300;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+
+        body {
+            background-color: #fff;
+            max-width: 1560px
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1999;
+            height: 64px
+        }
+
+        header .container-fluid {
+            padding: 0 5rem 0 3rem
+        }
+
+        header .logo {
+            transform: scale(.6);
+            width: 220px;
+            height: 40px
+        }
+
+        header .nav-link {
+            font-size: 20px
+        }
+
+        header .navbar-light .navbar-nav .nav-link {
+            color: gray;
+            text-decoration: underline;
+            font-weight: bolder
+        }
+
+        header .navbar-light .navbar-nav .nav-link.active {
+            color: #000;
+            text-decoration: none
+        }
+
+        .h1Galerias {
+            position: absolute;
+            color: #000;
+            margin-left: 10px;
+            z-index: 9999;
+            top: 10px;
+            left: 35%;
+            padding-top: 5px
+        }
+
+        .gridG123 .galeriaSlide {
+            height: 100%;
+            width: 90%;
+            max-width: auto;
+            position: relative;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            grid-area: 1/2/4/5
+        }
+
+        .gridG123 .casilla1a {
+            grid-area: 1/1/2/2
+        }
+
+        .gridG123 .casilla2a {
+            grid-area: 2/1/3/2
+        }
+
+        .gridG123 .casilla3a {
+            grid-area: 3/1/4/2
+        }
+
+        .gridG123 .casilla1b {
+            grid-area: 4/1/5/2
+        }
+
+        .gridG123 .casilla2b {
+            grid-area: 4/2/5/3
+        }
+
+        .gridG123 .casilla3b {
+            grid-area: 4/3/5/4
+        }
+
+        .gridG123 .casilla1c {
+            grid-area: 4/4/5/5
+        }
+
+        .gridG123 .casilla2c {
+            grid-area: 5/1/6/2
+        }
+
+        .gridG123 .casilla3c {
+            grid-area: 5/2/6/3
+        }
+
+        .gridG123 .casilla1d {
+            grid-area: 5/3/6/4
+        }
+
+        .gridG123 .casilla2d {
+            grid-area: 5/4/6/5
+        }
+
+        .flexWrapContacto .articuloContacto .about,
+        .flexWrapContacto .sectionContacto .containerContacto .cont1,
+        .flexWrapContacto .sectionContacto .containerContacto .cont2,
+        .flexWrapContacto .sectionContacto .containerContacto .cont3,
+        .flexWrapContacto .sectionContacto .containerContacto .cont4 {
+            display: flex;
+            justify-content: center
+        }
+
+        .flexWrapContacto {
+            padding-top: 10px;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            max-width: 1140px
+        }
+
+        .flexWrapContacto .articuloContacto {
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: row;
+            width: 100%
+        }
+
+        .flexWrapContacto .articuloContacto .imagenContacto {
+            border: 1px solid #000;
+            height: 400px;
+            width: 40%;
+            min-width: 350px;
+            background-image: url("img/Fotografo%20(2).webp");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: right
+        }
+
+        .flexWrapContacto .articuloContacto .about {
+            width: 60%;
+            max-width: 600px;
+            flex-direction: column;
+            margin: 10px 0
+        }
+
+        .flexWrapContacto .articuloContacto .about h2 {
+            font-size: 2.5rem;
+            text-align: start;
+            color: #000;
+            margin: 0 30px 10px 20px
+        }
+
+        .flexWrapContacto .articuloContacto .about h2 #Contact a {
+            color: grey;
+            text-decoration: none
+        }
+
+        .flexWrapContacto .articuloContacto .about h3 {
+            line-height: 1.6;
+            font-size: 1.4rem;
+            text-align: start;
+            color: #000
+        }
+
+        .flexWrapContacto .sectionContacto {
+            width: 100%;
+            margin: 40px 20px 0 20px
+        }
+
+        .flexWrapContacto .sectionContacto .últimosTrabajos {
+            font-size: 2rem;
+            text-align: start;
+            color: grey;
+            margin: 0 0 0 50px
+        }
+
+        .flexWrapContacto .sectionContacto .containerContacto {
+            width: 100%;
+            display: flex;
+            flex-direction: row
+        }
+
+        .flexWrapContacto .sectionContacto .containerContacto .cont1,
+        .flexWrapContacto .sectionContacto .containerContacto .cont2,
+        .flexWrapContacto .sectionContacto .containerContacto .cont3,
+        .flexWrapContacto .sectionContacto .containerContacto .cont4 {
+            max-width: 100%;
+            max-height: 100%;
+            width: 24%;
+            height: 200px;
+            margin: 0 5px
+        }
+
+        .flexWrapContacto .sectionContacto .containerContacto .cont1 img,
+        .flexWrapContacto .sectionContacto .containerContacto .cont2 img,
+        .flexWrapContacto .sectionContacto .containerContacto .cont3 img,
+        .flexWrapContacto .sectionContacto .containerContacto .cont4 img {
+            object-fit: cover;
+            object-position: center;
+            height: 100%;
+            width: 100%
+        }
+
+        .flexWrapContacto .sectionContacto .datos {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            margin: 20px auto
+        }
+
+        .flexWrapContacto .sectionContacto .datos h2 {
+            font-size: 2rem;
+            text-align: start;
+            color: #000;
+            margin: 10px
+        }
+
+        .flexWrapContacto .sectionContacto .datos h2 #About a {
+            color: grey;
+            text-decoration: none
+        }
+
+        .flexWrapContacto .sectionContacto .datos h3 {
+            font-size: 1.5rem;
+            text-align: left;
+            color: #000;
+            line-height: 1.6;
+            margin-left: 20px;
+            text-shadow: 1px 1px 2px #fff
+        }
+
+        @media only screen and (min-width:481px) and (max-width:1015px) {
+            .gridG123 .galeriaSlide {
+                width: 100%;
+                grid-area: 1/1/4/4;
+                padding: 0;
+                max-height: 70%
+            }
+
+            .gridG123 .casilla1a {
+                grid-area: 4/1/5/2
+            }
+
+            .gridG123 .casilla2a {
+                grid-area: 4/2/5/3
+            }
+
+            .gridG123 .casilla3a {
+                grid-area: 4/3/5/4
+            }
+
+            .gridG123 .casilla1b {
+                grid-area: 5/1/6/2
+            }
+
+            .gridG123 .casilla2b {
+                grid-area: 5/2/6/3
+            }
+
+            .gridG123 .casilla3b {
+                grid-area: 5/3/6/4
+            }
+
+            .gridG123 .casilla1c {
+                grid-area: 6/1/7/2
+            }
+
+            .gridG123 .casilla2c {
+                grid-area: 6/2/7/3
+            }
+
+            .gridG123 .casilla3c {
+                grid-area: 6/3/7/4
+            }
+
+            .gridG123 .casilla1d {
+                grid-area: 7/1/8/2
+            }
+
+            .gridG123 .casilla2d {
+                grid-area: 7/2/8/4;
+                max-height: 90%;
+                width: 95%;
+                overflow: hidden
+            }
+
+            .flexWrapContacto {
+                margin-left: 20px
+            }
+
+            .flexWrapContacto .articuloContacto .imagenContacto {
+                margin: 0 5px;
+                width: 80%;
+                min-width: 200px
+            }
+
+            .flexWrapContacto .articuloContacto .about h3 {
+                margin: 0 20px 5px 20px;
+                font-size: 1.1rem
+            }
+        }
+
+        @media only screen and (min-width:0px) and (max-width:480px) {
+            .h1Galerias {
+                left: 160px;
+                top: 13px;
+                font-size: 20px
+            }
+
+            h2 {
+                font-size: 1.3rem !important
+            }
+
+            h3 {
+                font-size: 1rem !important
+            }
+
+            .navbar-nav .nav-link {
+                font-size: 16px;
+                padding: .5rem 1.5rem
+            }
+
+            .navbar-brand {
+                margin-left: -30px
+            }
+
+            header .logo {
+                transform: scale(.5)
+            }
+
+            .navbar-toggler {
+                margin-right: 10px
+            }
+
+            .gridG123 .galeriaSlide {
+                display: flex;
+                grid-area: 1/1/4/3;
+                width: 100%;
+                margin: 0;
+                align-items: center;
+                padding-bottom: 0
+            }
+
+            .gridG123 .casilla1a {
+                grid-area: 4/1/5/2
+            }
+
+            .gridG123 .casilla2a {
+                grid-area: 4/2/5/3
+            }
+
+            .gridG123 .casilla3a {
+                grid-area: 5/1/6/2
+            }
+
+            .gridG123 .casilla1b {
+                grid-area: 5/2/6/3
+            }
+
+            .gridG123 .casilla2b {
+                grid-area: 6/1/7/2
+            }
+
+            .gridG123 .casilla3b {
+                grid-area: 6/2/7/3
+            }
+
+            .gridG123 .casilla1c {
+                grid-area: 7/1/8/2
+            }
+
+            .gridG123 .casilla2c {
+                grid-area: 7/2/8/3
+            }
+
+            .gridG123 .casilla3c {
+                grid-area: 8/1/9/2
+            }
+
+            .gridG123 .casilla1d {
+                grid-area: 8/2/9/3
+            }
+
+            .gridG123 .casilla2d {
+                grid-area: 9/1/10/3;
+                max-height: 123px;
+                overflow: hidden
+            }
+
+            .flexWrapContacto {
+                padding-top: 0
+            }
+
+            .flexWrapContacto .articuloContacto {
+                margin: 0
+            }
+
+            .flexWrapContacto .articuloContacto .imagenContacto {
+                height: 400px !important;
+                margin: 0 5px;
+                width: 80%;
+                min-width: 200px
+            }
+
+            .flexWrapContacto .articuloContacto .about {
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-items: center
+            }
+
+            .flexWrapContacto .articuloContacto .about h2 {
+                margin: 0
+            }
+
+            .flexWrapContacto .articuloContacto .about h3 {
+                margin: 5px 15px
+            }
+
+            .flexWrapContacto .sectionContacto {
+                margin-top: 5px
+            }
+
+            .flexWrapContacto .sectionContacto .últimosTrabajos {
+                margin: 5px 0 0 0;
+                text-align: center
+            }
+
+            .flexWrapContacto .sectionContacto .datos h2 {
+                text-align: center
+            }
+        }
+
+        @media only screen and (min-width:0px) and (max-width:991px) {
+            header .container-fluid {
+                padding: 0 1.1rem 0 .8rem
+            }
+        }
+
+        @media only screen and (min-width:481px) and (max-width:990px) {
+            .navbar-toggler {
+                margin-right: 30px
+            }
+
+            .ms-auto {
+                margin-left: 2.5rem !important
+            }
+
+            header .container-fluid {
+                padding: 0 1.1rem 0 0
+            }
+        }
+
+        @media only screen and (min-width:800px) and (max-width:1100px) {
+            .h1Galerias {
+                position: absolute;
+                color: #000;
+                margin-left: 10px;
+                z-index: 9999;
+                top: 10px;
+                left: 30%;
+                padding-top: 5px
+            }
+
+            .flexWrapContacto .articuloContacto .about {
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-items: center
+            }
+
+            .flexWrapContacto .articuloContacto .about h2 {
+                margin: 0
+            }
+
+            .flexWrapContacto .articuloContacto .about h3 {
+                margin: 5px 15px
+            }
+        }
+
+        @media only screen and (min-width:481px) and (max-width:800px) {
+            .h1Galerias {
+                position: absolute;
+                color: #000;
+                margin-left: 10px;
+                z-index: 9999;
+                top: 10px;
+                left: 50%;
+                padding-top: 5px
+            }
+        }
+
+        @media only screen and (min-width:0px) and (max-width:918px) {
+            .flexWrapContacto {
+                margin: 5px
+            }
+
+            .flexWrapContacto .articuloContacto {
+                margin: 0 30px;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center
+            }
+
+            .flexWrapContacto .articuloContacto .about {
+                margin-top: 20px;
+                width: 100%;
+                max-width: 100%
+            }
+
+            .flexWrapContacto .sectionContacto {
+                margin-top: 0
+            }
+
+            .flexWrapContacto .sectionContacto .containerContacto {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                flex-direction: row
+            }
+
+            .flexWrapContacto .sectionContacto .containerContacto .cont1,
+            .flexWrapContacto .sectionContacto .containerContacto .cont2,
+            .flexWrapContacto .sectionContacto .containerContacto .cont3,
+            .flexWrapContacto .sectionContacto .containerContacto .cont4 {
+                width: 45%;
+                margin-top: 10px
+            }
+        }
+    </style>
+
     <!-- CSS Propio -->
-    <link rel="stylesheet" href="css/style.css">
+    <noscript>
+        <link rel="stylesheet" href="css/style.css">
+    </noscript>
 
     <!-- Icono para título -->
     <link rel="shortcut icon" type="image/x-icon" href="./img/icons8-camera-16.png" />
@@ -180,6 +866,22 @@
 
     <script async src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <!-- JAVA LoadCSS -->
+    <script>
+        function loadCSS(e, t, n) {
+            "use strict";
+            var i = window.document.createElement("link");
+            var o = t || window.document.getElementsByTagName("script")[0];
+            i.rel = "stylesheet";
+            i.href = e;
+            i.media = "only x";
+            o.parentNode.insertBefore(i, o);
+            setTimeout(function () {
+                i.media = n || "all"
+            })
+        }
+        loadCSS('css/site.css');
     </script>
 
 </body>

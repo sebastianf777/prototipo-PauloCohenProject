@@ -1124,7 +1124,7 @@
 
     <!-- CSS Propio -->
     <noscript>
-        <link rel="stylesheet" href="style.css"></noscript>
+        <link rel="stylesheet" href="css/style.css"></noscript>
 
     <!--  Icono  -->
     <link rel="shortcut icon" type="image/x-icon" href="./img/icons8-camera-16.png" />
@@ -1134,6 +1134,7 @@
 </head>
 
 <!-- termina head/Empieza body -->
+
 <body>
 
     <!-- Empieza Header -->
@@ -1277,6 +1278,7 @@
             slideshowContainer.addEventListener('mouseenter', pause)
             slideshowContainer.addEventListener('mouseleave', resume)
         })
+
         function plusSlides(n) {
             clearInterval(myTimer);
             if (n < 0) {
@@ -1285,6 +1287,7 @@
                 showSlides(slideIndex += 1);
             }
         }
+
         function currentSlide(n) {
             clearInterval(myTimer);
             myTimer = setInterval(function () {
@@ -1292,6 +1295,7 @@
             }, 4000);
             showSlides(slideIndex = n);
         }
+
         function showSlides(n) {
             var i;
             var slides = document.getElementsByClassName("imagenSlide");
@@ -1341,7 +1345,7 @@
                 i.media = n || "all"
             })
         }
-        loadCSS('css/site.css');
+        loadCSS('css/style.css');
     </script>
     <!-- termina java -->
 
