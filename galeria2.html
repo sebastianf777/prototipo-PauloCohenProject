@@ -32,7 +32,12 @@
     <meta property="og:locale" content="es_ES">
 
     <!-- CSS Crítico -->
-    <style type="text/css">
+    <script src="js/localCSS.js">
+    </script>
+    <script id="loadcss">
+        loadCSS("css/style.css", document.getElementById("loadcss"));
+    </script>
+    <style>
         @charset "UTF-8";
         @import url(https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap);
 
@@ -224,18 +229,6 @@
             text-decoration: none
         }
 
-        .footers {
-            color: #000;
-            text-align: start;
-            position: relative;
-            left: 3%;
-            background: 0 0
-        }
-
-        .footers h4 {
-            font-size: 13px
-        }
-
         .h1Galerias {
             position: absolute;
             color: #000;
@@ -246,40 +239,46 @@
             padding-top: 5px
         }
 
-        .gridG123 {
+        .articuloG {
+            display: flex;
+            justify-content: center
+        }
+
+        .articuloG .gridG123 {
             height: auto;
-            width: 90%;
+            width: auto;
             max-width: auto;
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: repeat(5, 3fr);
-            grid-column-gap: 0%;
-            grid-row-gap: 0%;
-            margin: 10px 20px 40px auto;
+            grid-template-columns: repeat(4, 23%);
+            grid-template-rows: repeat(6, 3fr);
+            grid-column-gap: 3%;
+            grid-row-gap: 3%;
+            margin: 10px auto;
             padding: 0
         }
 
-        .gridG123 .galeriaSlide {
-            height: 100%;
-            width: 90%;
-            max-width: auto;
+        .articuloG .gridG123 .galeriaSlide {
             position: relative;
-            padding-bottom: 20px;
-            margin-bottom: 20px;
             grid-area: 1/2/4/5
         }
 
-        .gridG123 .galeriaSlide div img {
-            height: 100%;
-            width: 100%;
-            max-width: 100%;
-            margin: 0;
-            padding: 5px 0;
-            object-fit: cover;
-            max-height: 519px
+        .articuloG .gridG123 .galeriaSlide div {
+            display: flex;
+            justify-content: center
         }
 
-        .gridG123 .galeriaSlide div .botonIzq {
+        .articuloG .gridG123 .galeriaSlide div img {
+            height: 500px;
+            width: 900px;
+            max-width: 100%;
+            position: absolute;
+            top: 0;
+            margin: 0;
+            padding: 0 0 2.15% 0;
+            object-fit: cover
+        }
+
+        .articuloG .gridG123 .galeriaSlide div .botonIzq {
             display: inline-block;
             position: absolute;
             top: 50%;
@@ -288,7 +287,7 @@
             padding: 8px 16px
         }
 
-        .gridG123 .galeriaSlide div .botonDer {
+        .articuloG .gridG123 .galeriaSlide div .botonDer {
             display: inline-block;
             position: absolute;
             top: 50%;
@@ -297,8 +296,8 @@
             padding: 8px 16px
         }
 
-        .gridG123 .galeriaSlide div .botonDer,
-        .gridG123 .galeriaSlide div .botonIzq {
+        .articuloG .gridG123 .galeriaSlide div .botonDer,
+        .articuloG .gridG123 .galeriaSlide div .botonIzq {
             background: 0 0;
             height: 100%;
             border: none;
@@ -306,9 +305,9 @@
             font-size: 30px
         }
 
-        .gridG123 .dot a img {
-            height: 100%;
-            width: 100%;
+        .articuloG .dot a img {
+            height: 144px;
+            width: 240px;
             max-width: 100%;
             display: flex;
             margin: 0 auto;
@@ -316,131 +315,133 @@
             object-fit: cover
         }
 
-        .gridG123 .casilla1a {
+        .articuloG .casilla1a {
             grid-area: 1/1/2/2
         }
 
-        .gridG123 .casilla2a {
+        .articuloG .casilla2a {
             grid-area: 2/1/3/2
         }
 
-        .gridG123 .casilla3a {
+        .articuloG .casilla3a {
             grid-area: 3/1/4/2
         }
 
-        .gridG123 .casilla1b {
+        .articuloG .casilla1b {
             grid-area: 4/1/5/2
         }
 
-        .gridG123 .casilla2b {
+        .articuloG .casilla2b {
             grid-area: 4/2/5/3
         }
 
-        .gridG123 .casilla3b {
+        .articuloG .casilla3b {
             grid-area: 4/3/5/4
         }
 
-        .gridG123 .casilla1c {
+        .articuloG .casilla1c {
             grid-area: 4/4/5/5
         }
 
-        .gridG123 .casilla2c {
+        .articuloG .casilla2c {
             grid-area: 5/1/6/2
         }
 
-        .gridG123 .casilla3c {
+        .articuloG .casilla3c {
             grid-area: 5/2/6/3
         }
 
-        .gridG123 .casilla1d {
+        .articuloG .casilla1d {
             grid-area: 5/3/6/4
         }
 
-        .gridG123 .casilla2d {
+        .articuloG .casilla2d {
             grid-area: 5/4/6/5
         }
 
-        .gridG123 .dot {
-            height: 80%;
-            width: 80%;
+        .articuloG .dot {
+            height: 100%;
+            width: 100%;
             max-width: 100%
         }
 
-        .gridG123 .dot:not(:hover) {
+        .articuloG .dot:not(:hover) {
             filter: grayscale(1)
         }
 
         @media only screen and (min-width:481px) and (max-width:1015px) {
-            .gridG123 {
+            .articuloG {
+                height: 1250px
+            }
+
+            .articuloG .gridG123 {
                 grid-template-columns: repeat(3, 1.2fr);
-                grid-template-rows: repeat(7, 0.4fr);
-                grid-row-gap: 0%;
-                grid-column-gap: 0%;
-                margin: 0 auto 20px;
+                grid-template-rows: repeat(7, 11.8%);
+                grid-row-gap: 3%;
+                grid-column-gap: 2%;
+                margin: 0 20px 20px;
                 padding: 0
             }
 
-            .gridG123 .galeriaSlide {
+            .articuloG .gridG123 .galeriaSlide {
                 width: 100%;
                 grid-area: 1/1/4/4;
-                padding: 0;
-                max-height: 70%
+                padding: 0
             }
 
-            .gridG123 .dot {
-                width: 90%;
-                padding-left: 10px
+            .articuloG .gridG123 .galeriaSlide div img {
+                height: 490px;
+                padding-right: 0;
+                padding-bottom: 0
             }
 
-            .gridG123 .casilla1a {
+            .articuloG .casilla1a {
                 grid-area: 4/1/5/2
             }
 
-            .gridG123 .casilla2a {
+            .articuloG .casilla2a {
                 grid-area: 4/2/5/3
             }
 
-            .gridG123 .casilla3a {
+            .articuloG .casilla3a {
                 grid-area: 4/3/5/4
             }
 
-            .gridG123 .casilla1b {
+            .articuloG .casilla1b {
                 grid-area: 5/1/6/2
             }
 
-            .gridG123 .casilla2b {
+            .articuloG .casilla2b {
                 grid-area: 5/2/6/3
             }
 
-            .gridG123 .casilla3b {
+            .articuloG .casilla3b {
                 grid-area: 5/3/6/4
             }
 
-            .gridG123 .casilla1c {
+            .articuloG .casilla1c {
                 grid-area: 6/1/7/2
             }
 
-            .gridG123 .casilla2c {
+            .articuloG .casilla2c {
                 grid-area: 6/2/7/3
             }
 
-            .gridG123 .casilla3c {
+            .articuloG .casilla3c {
                 grid-area: 6/3/7/4
             }
 
-            .gridG123 .casilla1d {
+            .articuloG .casilla1d {
                 grid-area: 7/1/8/2
             }
 
-            .gridG123 .casilla2d {
-                grid-area: 7/2/8/4;
-                max-height: 90%;
-                width: 95%;
-                overflow: hidden
+            .articuloG .casilla2d {
+                grid-area: 7/2/8/4
             }
 
-            .gridG123 .casilla2d a img {
-                position: absolute
+            .articuloG .casilla2d a img {
+                object-position: top;
+                width: 100%
             }
         }
 
@@ -468,15 +469,15 @@
                 margin-right: 10px
             }
 
-            .gridG123 {
+            .articuloG .gridG123 {
                 grid-template-columns: repeat(2, 1fr);
                 grid-template-rows: repeat(3, 0.7fr) repeat(6, 1fr);
                 grid-column-gap: 15px;
                 grid-row-gap: 20px;
-                margin: 0 auto 15px
+                margin: 0 20px 15px
             }
 
-            .gridG123 .galeriaSlide {
+            .articuloG .gridG123 .galeriaSlide {
                 display: flex;
                 grid-area: 1/1/4/3;
                 width: 100%;
@@ -485,60 +486,67 @@
                 padding-bottom: 0
             }
 
-            .gridG123 .dot {
-                width: 100%;
-                height: 123px;
+            .articuloG .gridG123 .galeriaSlide div img {
+                max-width: auto;
+                width: 800px;
+                height: 300px;
+                padding-right: 0;
+                padding-bottom: 0;
+                position: static
+            }
+
+            .articuloG .gridG123 .dot {
                 margin: 0;
                 padding: 0
             }
 
-            .gridG123 .casilla1a {
+            .articuloG .gridG123 .casilla1a {
                 grid-area: 4/1/5/2
             }
 
-            .gridG123 .casilla2a {
+            .articuloG .gridG123 .casilla2a {
                 grid-area: 4/2/5/3
             }
 
-            .gridG123 .casilla3a {
+            .articuloG .gridG123 .casilla3a {
                 grid-area: 5/1/6/2
             }
 
-            .gridG123 .casilla1b {
+            .articuloG .gridG123 .casilla1b {
                 grid-area: 5/2/6/3
             }
 
-            .gridG123 .casilla2b {
+            .articuloG .gridG123 .casilla2b {
                 grid-area: 6/1/7/2
             }
 
-            .gridG123 .casilla3b {
+            .articuloG .gridG123 .casilla3b {
                 grid-area: 6/2/7/3
             }
 
-            .gridG123 .casilla1c {
+            .articuloG .gridG123 .casilla1c {
                 grid-area: 7/1/8/2
             }
 
-            .gridG123 .casilla2c {
+            .articuloG .gridG123 .casilla2c {
                 grid-area: 7/2/8/3
             }
 
-            .gridG123 .casilla3c {
+            .articuloG .gridG123 .casilla3c {
                 grid-area: 8/1/9/2
             }
 
-            .gridG123 .casilla1d {
+            .articuloG .gridG123 .casilla1d {
                 grid-area: 8/2/9/3
             }
 
-            .gridG123 .casilla2d {
+            .articuloG .gridG123 .casilla2d {
                 grid-area: 9/1/10/3;
                 max-height: 123px;
                 overflow: hidden
             }
 
-            .gridG123 .casilla2d a img {
+            .articuloG .gridG123 .casilla2d a img {
                 object-position: center;
                 object-fit: cover
             }
@@ -588,10 +596,10 @@
             }
         }
     </style>
-
+    
     <!-- CSS Propio -->
     <noscript>
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style.css" media="print" onload="this.media='all'; this.onload=null">
     </noscript>
 
     <!-- Icono para título -->
@@ -660,7 +668,7 @@
 
     <!-- termina header -->
     <!--Empieza Artículo -->
-    <article>
+    <article class="articuloG">
         <div class="gridG123" id="#g123">
             <div class="galeriaSlide">
                 <div>
@@ -796,22 +804,6 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
 
-    <!-- JAVA LoadCSS -->
-    <script>
-        function loadCSS(e, t, n) {
-            "use strict";
-            var i = window.document.createElement("link");
-            var o = t || window.document.getElementsByTagName("script")[0];
-            i.rel = "stylesheet";
-            i.href = e;
-            i.media = "only x";
-            o.parentNode.insertBefore(i, o);
-            setTimeout(function () {
-                i.media = n || "all"
-            })
-        }
-        loadCSS('css/site.css');
-    </script>
     <!-- termina java -->
 </body>
 
