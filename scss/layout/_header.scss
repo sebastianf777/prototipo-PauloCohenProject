@@ -8,8 +8,8 @@ header {
 }
 .logo, .logoIndex{
     transform: scale(0.6);
-    width: 220px;
-    height: 40px;
+    width: 246px;
+height: 40px;
 }
     .nav-link,
     .navLinkIndex {
@@ -37,5 +37,7 @@ header {
     .clearFloats {
         clear: both;
     }
-
+    .navbar-expand-lg .navbar-collapse {
+        // margin-left: 12.6%;
+    }
 }

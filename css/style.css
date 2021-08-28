@@ -6076,7 +6076,7 @@ header .container-fluid, header .container-sm, header .container-md, header .con
 }
 header .logo, header .logoIndex {
   transform: scale(0.6);
-  width: 220px;
+  width: 246px;
   height: 40px;
 }
 header .nav-link,
@@ -6099,7 +6099,6 @@ header .navbar-light .navbar-nav .nav-link:hover {
 header .clearFloats {
   clear: both;
 }
-
 .footers {
   color: black;
   text-align: start;
@@ -6107,7 +6106,7 @@ header .clearFloats {
   left: 3%;
   background: none;
 }
-.footers h4 {
+.footers h4, .footers p {
   font-size: 13px;
 }
 
@@ -6145,14 +6144,16 @@ header .clearFloats {
 }
 
 .h1Index {
-  position: absolute;
+  position: relative;
   color: white;
-  margin-left: 10px;
+  margin-left: 1%;
   z-index: 9999;
-  top: 10px;
-  left: 34%;
+  top: 1%;
+  left: 14%;
   padding-top: 5px;
   cursor: default;
+  width: 200px;
+  right: 0;
 }
 
 .footerIndex {
@@ -6162,7 +6163,7 @@ header .clearFloats {
   left: 3%;
   background: none;
 }
-.footerIndex h4 {
+.footerIndex p {
   font-size: 13px;
 }
 
@@ -6424,7 +6425,7 @@ header .clearFloats {
   left: 3%;
 }
 .flexWrapContacto .footerContacto h4 {
-  font-size: 10px;
+  font-size: 13px;
 }
 
 /* -------------- */
@@ -6511,15 +6512,25 @@ header .clearFloats {
 /* 0px A 480px ---------------------*/
 @media only screen and (min-width: 0px) and (max-width: 480px) {
   .h1Galerias {
-    left: 160px;
-    top: 13px;
-    font-size: 20px;
+    position: absolute;
+    color: black;
+    margin-left: 0px;
+    z-index: 9999;
+    top: 10px;
+    left: 54%;
+    padding-top: 5px;
+    font-size: 23px;
   }
 
   .h1Index {
-    left: 150px;
-    top: 13px;
-    font-size: 20px;
+    position: absolute;
+    color: white;
+    margin-left: 0px;
+    z-index: 9999;
+    top: 18px;
+    left: 50%;
+    padding-top: 5px;
+    font-size: 15px;
   }
 
   h2 {
@@ -6537,23 +6548,23 @@ header .clearFloats {
   }
 
   .navIndex a .logoIndex {
-    transform: scale(0.5);
+    transform: scale(0.4);
   }
 
   .navbar-brand {
-    margin-left: -30px;
+    margin-left: -60px;
   }
 
   header .logo {
-    transform: scale(0.5);
+    transform: scale(0.4);
   }
 
   .navbar-toggler {
-    margin-right: 10px;
+    margin-right: -10px;
   }
 
   .togglerIndex {
-    margin-right: 0px;
+    margin-right: -20px;
   }
 
   .articuloG .gridG123 {
@@ -6683,14 +6694,14 @@ header .clearFloats {
     padding: 0 1.1rem 0 0rem;
   }
 }
-@media only screen and (min-width: 800px) and (max-width: 1100px) {
+@media only screen and (min-width: 800px) and (max-width: 990px) {
   .h1Galerias {
     position: absolute;
     color: black;
     margin-left: 10px;
     z-index: 9999;
     top: 10px;
-    left: 30%;
+    left: 50%;
     padding-top: 5px;
   }
 
@@ -6700,7 +6711,7 @@ header .clearFloats {
     margin-left: 10px;
     z-index: 9999;
     top: 10px;
-    left: 27%;
+    left: 50%;
     padding-top: 5px;
   }
 
@@ -6783,11 +6794,11 @@ header .clearFloats {
 .containerIndex .carousel-indicators {
   position: fixed;
 }
-.containerIndex div .carousel-item img {
-  width: 100%;
-  min-height: 685px;
+.containerIndex div .carousel-item img, .containerIndex div .carousel-item .amp-img {
+  width: 1750px;
+  height: 800px;
   object-fit: cover;
-  object-position: top;
+  object-position: 57% 0;
 }
 
 .carousel-item {

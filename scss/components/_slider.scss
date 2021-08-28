@@ -7,11 +7,11 @@
     .carousel-indicators {
         position: fixed;
     }
-    div .carousel-item img {
-        width: 100%;
-        min-height: 685px;
+    div .carousel-item img, div .carousel-item .amp-img {
+        width: 1750px;
+        height: 800px;
         object-fit: cover;
-        object-position: top;
+        object-position: 57% 0;
     }
     
 }

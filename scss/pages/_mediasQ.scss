@@ -130,15 +130,13 @@ width: 100%;
     //General
 
     .h1Galerias {
-        left: 160px;
-        top: 13px;
-        font-size: 20px;
+        @include h1(absolute, black, 0px, 9999, 10px, 54%, 5px);
+        font-size: 23px;
     }
 
     .h1Index {
-        left: 150px;
-        top: 13px;
-        font-size: 20px;
+        @include h1(absolute, white, 0px, 9999, 18px, 50%, 5px);
+        font-size: 15px;
     }
 
     h2 {
@@ -161,26 +159,26 @@ width: 100%;
     }
 
     .navIndex a .logoIndex {
-        transform: scale(0.5);
+        transform: scale(0.4);
     }
 
     .navbar-brand {
-        margin-left: -30px;
+        margin-left: -60px;
 
     }
 
     header .logo {
-        transform: scale(0.5);
+        transform: scale(0.4);
 
 
     }
 
     .navbar-toggler {
-        margin-right: 10px;
+        margin-right: -10px;
     }
 
     .togglerIndex {
-        margin-right: 0px;
+        margin-right: -20px;
 
     }
 
@@ -361,14 +359,14 @@ width: 100%;
 
 //h1s y Contacto
 
-@media only screen and (min-width: 800px) and (max-width: 1100px) {
+@media only screen and (min-width: 800px) and (max-width: 990px) {
 
     .h1Galerias {
-        @include h1(absolute, black, 10px, 9999, 10px, 30%, 5px)
+        @include h1(absolute, black, 10px, 9999, 10px, 50%, 5px)
     }
 
     .h1Index {
-        @include h1(absolute, white, 10px, 9999, 10px, 27%, 5px)
+        @include h1(absolute, white, 10px, 9999, 10px, 50%, 5px)
     }
 
     /////////////

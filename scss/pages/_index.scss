@@ -38,8 +38,10 @@
 }
 
 .h1Index{
-    @include h1(absolute, white, 10px, 9999, 10px, 34%, 5px);
+    @include h1(relative, white, 1%, 9999, 1%, 14%, 5px);
     cursor: default;
+    width: 200px;
+    right: 0;
 }
 
 .footerIndex {
@@ -49,7 +51,7 @@
     left: 3%;
     background: none;
 
-    h4 {
+    p {
         font-size: 13px;
     }
 
