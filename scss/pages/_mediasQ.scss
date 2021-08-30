@@ -132,11 +132,14 @@ width: 100%;
     .h1Galerias {
         @include h1(absolute, black, 0px, 9999, 10px, 54%, 5px);
         font-size: 23px;
+        width: 100px
     }
 
     .h1Index {
         @include h1(absolute, white, 0px, 9999, 18px, 50%, 5px);
         font-size: 15px;
+        width: 100px
+
     }
 
     h2 {

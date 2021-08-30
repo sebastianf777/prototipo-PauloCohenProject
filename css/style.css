@@ -6152,7 +6152,7 @@ header .clearFloats {
   left: 14%;
   padding-top: 5px;
   cursor: default;
-  width: 200px;
+  width: 100px;
   right: 0;
 }
 
@@ -6520,6 +6520,7 @@ header .clearFloats {
     left: 54%;
     padding-top: 5px;
     font-size: 23px;
+    width: 100px;
   }
 
   .h1Index {
@@ -6531,6 +6532,7 @@ header .clearFloats {
     left: 50%;
     padding-top: 5px;
     font-size: 15px;
+    width: 100px;
   }
 
   h2 {
