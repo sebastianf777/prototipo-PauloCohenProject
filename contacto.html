@@ -209,7 +209,7 @@
         header .logo {
             transform: scale(.6);
             width: 246px;
-    height: 40px;
+            height: 40px
         }
 
         header .nav-link {
@@ -235,60 +235,6 @@
             top: 10px;
             left: 35%;
             padding-top: 5px
-        }
-
-        .gridG123 .galeriaSlide {
-            height: 100%;
-            width: 90%;
-            max-width: auto;
-            position: relative;
-            padding-bottom: 20px;
-            margin-bottom: 20px;
-            grid-area: 1/2/4/5
-        }
-
-        .gridG123 .casilla1a {
-            grid-area: 1/1/2/2
-        }
-
-        .gridG123 .casilla2a {
-            grid-area: 2/1/3/2
-        }
-
-        .gridG123 .casilla3a {
-            grid-area: 3/1/4/2
-        }
-
-        .gridG123 .casilla1b {
-            grid-area: 4/1/5/2
-        }
-
-        .gridG123 .casilla2b {
-            grid-area: 4/2/5/3
-        }
-
-        .gridG123 .casilla3b {
-            grid-area: 4/3/5/4
-        }
-
-        .gridG123 .casilla1c {
-            grid-area: 4/4/5/5
-        }
-
-        .gridG123 .casilla2c {
-            grid-area: 5/1/6/2
-        }
-
-        .gridG123 .casilla3c {
-            grid-area: 5/2/6/3
-        }
-
-        .gridG123 .casilla1d {
-            grid-area: 5/3/6/4
-        }
-
-        .gridG123 .casilla2d {
-            grid-area: 5/4/6/5
         }
 
         .flexWrapContacto .articuloContacto .about,
@@ -358,13 +304,6 @@
             margin: 40px 20px 0 20px
         }
 
-        .flexWrapContacto .sectionContacto .últimosTrabajos {
-            font-size: 2rem;
-            text-align: start;
-            color: grey;
-            margin: 0 0 0 50px
-        }
-
         .flexWrapContacto .sectionContacto .containerContacto {
             width: 100%;
             display: flex;
@@ -420,60 +359,18 @@
             text-shadow: 1px 1px 2px #fff
         }
 
+        .flexWrapContacto .footerContacto {
+            position: relative;
+            width: 100%;
+            text-align: start;
+            left: 3%
+        }
+
+        .flexWrapContacto .footerContacto h4 {
+            font-size: 13px
+        }
+
         @media only screen and (min-width:481px) and (max-width:1015px) {
-            .gridG123 .galeriaSlide {
-                width: 100%;
-                grid-area: 1/1/4/4;
-                padding: 0;
-                max-height: 70%
-            }
-
-            .gridG123 .casilla1a {
-                grid-area: 4/1/5/2
-            }
-
-            .gridG123 .casilla2a {
-                grid-area: 4/2/5/3
-            }
-
-            .gridG123 .casilla3a {
-                grid-area: 4/3/5/4
-            }
-
-            .gridG123 .casilla1b {
-                grid-area: 5/1/6/2
-            }
-
-            .gridG123 .casilla2b {
-                grid-area: 5/2/6/3
-            }
-
-            .gridG123 .casilla3b {
-                grid-area: 5/3/6/4
-            }
-
-            .gridG123 .casilla1c {
-                grid-area: 6/1/7/2
-            }
-
-            .gridG123 .casilla2c {
-                grid-area: 6/2/7/3
-            }
-
-            .gridG123 .casilla3c {
-                grid-area: 6/3/7/4
-            }
-
-            .gridG123 .casilla1d {
-                grid-area: 7/1/8/2
-            }
-
-            .gridG123 .casilla2d {
-                grid-area: 7/2/8/4;
-                max-height: 90%;
-                width: 95%;
-                overflow: hidden
-            }
 
             .flexWrapContacto {
                 margin-left: 20px
@@ -493,9 +390,15 @@
 
         @media only screen and (min-width:0px) and (max-width:480px) {
             .h1Galerias {
-                left: 160px;
-                top: 13px;
-                font-size: 20px
+                position: absolute;
+                color: #000;
+                margin-left: 0;
+                z-index: 9999;
+                top: 18px;
+                left: 50%;
+                padding-top: 5px;
+                font-size: 15px;
+                width: 100px
             }
 
             h2 {
@@ -512,70 +415,15 @@
             }
 
             .navbar-brand {
-                margin-left: -30px
+                margin-left: -70px
             }
 
             header .logo {
-                transform: scale(.5)
+                transform: scale(.4)
             }
 
             .navbar-toggler {
-                margin-right: 10px
-            }
-
-            .gridG123 .galeriaSlide {
-                display: flex;
-                grid-area: 1/1/4/3;
-                width: 100%;
-                margin: 0;
-                align-items: center;
-                padding-bottom: 0
-            }
-
-            .gridG123 .casilla1a {
-                grid-area: 4/1/5/2
-            }
-
-            .gridG123 .casilla2a {
-                grid-area: 4/2/5/3
-            }
-
-            .gridG123 .casilla3a {
-                grid-area: 5/1/6/2
-            }
-
-            .gridG123 .casilla1b {
-                grid-area: 5/2/6/3
-            }
-
-            .gridG123 .casilla2b {
-                grid-area: 6/1/7/2
-            }
-
-            .gridG123 .casilla3b {
-                grid-area: 6/2/7/3
-            }
-
-            .gridG123 .casilla1c {
-                grid-area: 7/1/8/2
-            }
-
-            .gridG123 .casilla2c {
-                grid-area: 7/2/8/3
-            }
-
-            .gridG123 .casilla3c {
-                grid-area: 8/1/9/2
-            }
-
-            .gridG123 .casilla1d {
-                grid-area: 8/2/9/3
-            }
-
-            .gridG123 .casilla2d {
-                grid-area: 9/1/10/3;
-                max-height: 123px;
-                overflow: hidden
+                margin-right: 0
             }
 
             .flexWrapContacto {
@@ -587,10 +435,11 @@
             }
 
             .flexWrapContacto .articuloContacto .imagenContacto {
-                height: 400px !important;
+                height: 300px !important;
                 margin: 0 5px;
                 width: 80%;
-                min-width: 200px
+                min-width: 200px;
+                background-position: 80% 50%
             }
 
             .flexWrapContacto .articuloContacto .about {
@@ -609,11 +458,6 @@
 
             .flexWrapContacto .sectionContacto {
                 margin-top: 5px
-            }
-
-            .flexWrapContacto .sectionContacto .últimosTrabajos {
-                margin: 5px 0 0 0;
-                text-align: center
             }
 
             .flexWrapContacto .sectionContacto .datos h2 {
@@ -641,14 +485,26 @@
             }
         }
 
-        @media only screen and (min-width:800px) and (max-width:1100px) {
+        @media only screen and (min-width:481px) and (max-width:800px) {
             .h1Galerias {
                 position: absolute;
                 color: #000;
                 margin-left: 10px;
                 z-index: 9999;
                 top: 10px;
-                left: 30%;
+                left: 50%;
+                padding-top: 5px
+            }
+        }
+
+        @media only screen and (min-width:800px) and (max-width:990px) {
+            .h1Galerias {
+                position: absolute;
+                color: #000;
+                margin-left: 10px;
+                z-index: 9999;
+                top: 10px;
+                left: 50%;
                 padding-top: 5px
             }
 
@@ -664,18 +520,6 @@
 
             .flexWrapContacto .articuloContacto .about h3 {
                 margin: 5px 15px
-            }
-        }
-
-        @media only screen and (min-width:481px) and (max-width:800px) {
-            .h1Galerias {
-                position: absolute;
-                color: #000;
-                margin-left: 10px;
-                z-index: 9999;
-                top: 10px;
-                left: 50%;
-                padding-top: 5px
             }
         }
 
@@ -717,7 +561,6 @@
             }
         }
     </style>
-
     <!-- CSS Propio -->
     <noscript>
         <link rel="stylesheet" href="css/style.css" media="print" onload="this.media='all'; this.onload=null">
@@ -748,7 +591,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                    <ul class="navbar-nav ms-auto mb-lg-0">
+                    <ul class="navbar-nav ms-auto mb-lg-0 px-2">
                         <li class="nav-item">
                             <a class="nav-link" href="galeria1.html">nature</a>
                         </li>

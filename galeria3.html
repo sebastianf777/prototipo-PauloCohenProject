@@ -211,7 +211,7 @@
         header .logo {
             transform: scale(.6);
             width: 246px;
-    height: 40px;
+            height: 40px
         }
 
         header .nav-link {
@@ -229,6 +229,18 @@
             text-decoration: none
         }
 
+        .footers {
+            color: #000;
+            text-align: start;
+            position: relative;
+            left: 3%;
+            background: 0 0
+        }
+
+        .footers h4 {
+            font-size: 13px
+        }
+
         .h1Galerias {
             position: absolute;
             color: #000;
@@ -239,80 +251,9 @@
             padding-top: 5px
         }
 
-        .articuloG {
-            display: flex;
-            justify-content: center
-        }
-
-        .articuloG .gridG123 {
-            height: auto;
-            width: auto;
-            max-width: auto;
-            display: grid;
-            grid-template-columns: repeat(4, 23%);
-            grid-template-rows: repeat(6, 3fr);
-            grid-column-gap: 3%;
-            grid-row-gap: 3%;
-            margin: 10px auto;
-            padding: 0
-        }
-
         .articuloG .gridG123 .galeriaSlide {
             position: relative;
             grid-area: 1/2/4/5
-        }
-
-        .articuloG .gridG123 .galeriaSlide div {
-            display: flex;
-            justify-content: center
-        }
-
-        .articuloG .gridG123 .galeriaSlide div img {
-            height: 500px;
-            width: 900px;
-            max-width: 100%;
-            position: absolute;
-            top: 0;
-            margin: 0;
-            padding: 0 0 2.15% 0;
-            object-fit: cover
-        }
-
-        .articuloG .gridG123 .galeriaSlide div .botonIzq {
-            display: inline-block;
-            position: absolute;
-            top: 50%;
-            left: 0;
-            transform: translate(0, -50%);
-            padding: 8px 16px
-        }
-
-        .articuloG .gridG123 .galeriaSlide div .botonDer {
-            display: inline-block;
-            position: absolute;
-            top: 50%;
-            right: 0;
-            transform: translate(0, -50%);
-            padding: 8px 16px
-        }
-
-        .articuloG .gridG123 .galeriaSlide div .botonDer,
-        .articuloG .gridG123 .galeriaSlide div .botonIzq {
-            background: 0 0;
-            height: 100%;
-            border: none;
-            color: gray;
-            font-size: 30px
-        }
-
-        .articuloG .dot a img {
-            height: 144px;
-            width: 240px;
-            max-width: 100%;
-            display: flex;
-            margin: 0 auto;
-            padding: auto;
-            object-fit: cover
         }
 
         .articuloG .casilla1a {
@@ -359,40 +300,11 @@
             grid-area: 5/4/6/5
         }
 
-        .articuloG .dot {
-            height: 100%;
-            width: 100%;
-            max-width: 100%
-        }
-
-        .articuloG .dot:not(:hover) {
-            filter: grayscale(1)
-        }
-
         @media only screen and (min-width:481px) and (max-width:1015px) {
-            .articuloG {
-                height: 1250px
-            }
-
-            .articuloG .gridG123 {
-                grid-template-columns: repeat(3, 1.2fr);
-                grid-template-rows: repeat(7, 11.8%);
-                grid-row-gap: 3%;
-                grid-column-gap: 2%;
-                margin: 0 20px 20px;
-                padding: 0
-            }
-
             .articuloG .gridG123 .galeriaSlide {
                 width: 100%;
                 grid-area: 1/1/4/4;
                 padding: 0
-            }
-
-            .articuloG .gridG123 .galeriaSlide div img {
-                height: 490px;
-                padding-right: 0;
-                padding-bottom: 0
             }
 
             .articuloG .casilla1a {
@@ -438,18 +350,19 @@
             .articuloG .casilla2d {
                 grid-area: 7/2/8/4
             }
-
-            .articuloG .casilla2d a img {
-                object-position: top;
-                width: 100%
-            }
         }
 
         @media only screen and (min-width:0px) and (max-width:480px) {
             .h1Galerias {
-                left: 160px;
-                top: 13px;
-                font-size: 20px
+                position: absolute;
+                color: #000;
+                margin-left: 0;
+                z-index: 9999;
+                top: 18px;
+                left: 50%;
+                padding-top: 5px;
+                font-size: 15px;
+                width: 100px
             }
 
             .navbar-nav .nav-link {
@@ -458,23 +371,15 @@
             }
 
             .navbar-brand {
-                margin-left: -30px
+                margin-left: -70px
             }
 
             header .logo {
-                transform: scale(.5)
+                transform: scale(.4)
             }
 
             .navbar-toggler {
-                margin-right: 10px
-            }
-
-            .articuloG .gridG123 {
-                grid-template-columns: repeat(2, 1fr);
-                grid-template-rows: repeat(3, 0.7fr) repeat(6, 1fr);
-                grid-column-gap: 15px;
-                grid-row-gap: 20px;
-                margin: 0 20px 15px
+                margin-right: 0
             }
 
             .articuloG .gridG123 .galeriaSlide {
@@ -484,20 +389,6 @@
                 margin: 0;
                 align-items: center;
                 padding-bottom: 0
-            }
-
-            .articuloG .gridG123 .galeriaSlide div img {
-                max-width: auto;
-                width: 800px;
-                height: 300px;
-                padding-right: 0;
-                padding-bottom: 0;
-                position: static
-            }
-
-            .articuloG .gridG123 .dot {
-                margin: 0;
-                padding: 0
             }
 
             .articuloG .gridG123 .casilla1a {
@@ -545,11 +436,6 @@
                 max-height: 123px;
                 overflow: hidden
             }
-
-            .articuloG .gridG123 .casilla2d a img {
-                object-position: center;
-                object-fit: cover
-            }
         }
 
         @media only screen and (min-width:0px) and (max-width:991px) {
@@ -572,18 +458,6 @@
             }
         }
 
-        @media only screen and (min-width:800px) and (max-width:1100px) {
-            .h1Galerias {
-                position: absolute;
-                color: #000;
-                margin-left: 10px;
-                z-index: 9999;
-                top: 10px;
-                left: 30%;
-                padding-top: 5px
-            }
-        }
-
         @media only screen and (min-width:481px) and (max-width:800px) {
             .h1Galerias {
                 position: absolute;
@@ -595,8 +469,19 @@
                 padding-top: 5px
             }
         }
+
+        @media only screen and (min-width:800px) and (max-width:990px) {
+            .h1Galerias {
+                position: absolute;
+                color: #000;
+                margin-left: 10px;
+                z-index: 9999;
+                top: 10px;
+                left: 50%;
+                padding-top: 5px
+            }
+        }
     </style>
-    
     <!-- CSS Propio -->
     <noscript>
         <link rel="stylesheet" href="css/style.css">
@@ -626,7 +511,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                    <ul class="navbar-nav ms-auto mb-lg-0">
+                    <ul class="navbar-nav ms-auto mb-lg-0 px-2">
                         <li class="nav-item">
                             <a class="nav-link" href="galeria1.html">nature</a>
                         </li>

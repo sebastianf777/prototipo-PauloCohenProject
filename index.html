@@ -35,7 +35,7 @@
   <script id="loadcss">
     loadCSS("css/style.css", document.getElementById("loadcss"));
   </script>
-  <!-- <style type="text/css">
+  <style>
     @charset "UTF-8";
     @import url(https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap);
 
@@ -297,7 +297,7 @@
     header .logoIndex {
       transform: scale(.6);
       width: 246px;
-      height: 40px;
+      height: 40px
     }
 
     header .navLinkIndex {
@@ -310,7 +310,7 @@
       top: 0;
       width: 100%;
       z-index: 2;
-      padding: 2.1rem 6rem 2rem 3rem
+      padding: 2.3rem 5rem 2rem 3rem
     }
 
     .navIndex a .logoIndex {
@@ -330,13 +330,14 @@
     }
 
     .h1Index {
-      position: absolute;
+      position: relative;
       color: #fff;
-      margin-left: 10px;
+      margin-left: 3%;
       z-index: 9999;
-      top: 10px;
-      left: 34%;
-      padding-top: 5px
+      top: 0;
+      left: 0;
+      padding-top: 0;
+      width: 100px
     }
 
     .footerIndex {
@@ -347,125 +348,18 @@
       background: 0 0
     }
 
-    .footerIndex h4 {
-      font-size: 13px
-    }
-
-    .gridG123 .galeriaSlide {
-      height: 100%;
-      width: 90%;
-      max-width: auto;
-      position: relative;
-      padding-bottom: 20px;
-      margin-bottom: 20px;
-      grid-area: 1/2/4/5
-    }
-
-    .gridG123 .casilla1a {
-      grid-area: 1/1/2/2
-    }
-
-    .gridG123 .casilla2a {
-      grid-area: 2/1/3/2
-    }
-
-    .gridG123 .casilla3a {
-      grid-area: 3/1/4/2
-    }
-
-    .gridG123 .casilla1b {
-      grid-area: 4/1/5/2
-    }
-
-    .gridG123 .casilla2b {
-      grid-area: 4/2/5/3
-    }
-
-    .gridG123 .casilla3b {
-      grid-area: 4/3/5/4
-    }
-
-    .gridG123 .casilla1c {
-      grid-area: 4/4/5/5
-    }
-
-    .gridG123 .casilla2c {
-      grid-area: 5/1/6/2
-    }
-
-    .gridG123 .casilla3c {
-      grid-area: 5/2/6/3
-    }
-
-    .gridG123 .casilla1d {
-      grid-area: 5/3/6/4
-    }
-
-    .gridG123 .casilla2d {
-      grid-area: 5/4/6/5
-    }
-
-    @media only screen and (min-width:481px) and (max-width:1015px) {
-      .gridG123 .galeriaSlide {
-        width: 100%;
-        grid-area: 1/1/4/4;
-        padding: 0;
-        max-height: 70%
-      }
-
-      .gridG123 .casilla1a {
-        grid-area: 4/1/5/2
-      }
-
-      .gridG123 .casilla2a {
-        grid-area: 4/2/5/3
-      }
-
-      .gridG123 .casilla3a {
-        grid-area: 4/3/5/4
-      }
-
-      .gridG123 .casilla1b {
-        grid-area: 5/1/6/2
-      }
-
-      .gridG123 .casilla2b {
-        grid-area: 5/2/6/3
-      }
-
-      .gridG123 .casilla3b {
-        grid-area: 5/3/6/4
-      }
-
-      .gridG123 .casilla1c {
-        grid-area: 6/1/7/2
-      }
-
-      .gridG123 .casilla2c {
-        grid-area: 6/2/7/3
-      }
-
-      .gridG123 .casilla3c {
-        grid-area: 6/3/7/4
-      }
-
-      .gridG123 .casilla1d {
-        grid-area: 7/1/8/2
-      }
-
-      .gridG123 .casilla2d {
-        grid-area: 7/2/8/4;
-        max-height: 90%;
-        width: 95%;
-        overflow: hidden
-      }
-    }
 
     @media only screen and (min-width:0px) and (max-width:480px) {
       .h1Index {
-        left: 150px;
-        top: 13px;
-        font-size: 20px
+        position: absolute;
+        color: #fff;
+        margin-left: 0;
+        z-index: 9999;
+        top: 18px;
+        left: 47%;
+        padding-top: 5px;
+        font-size: 15px;
+        width: 50px
       }
 
       .navIndex div ul li .navLinkIndex {
@@ -474,80 +368,30 @@
       }
 
       .navIndex a .logoIndex {
-        transform: scale(.5)
+        transform: scale(.4)
       }
 
       .navbar-brand {
-        margin-left: -30px
+        margin-left: -70px
       }
 
       .navbar-toggler {
-        margin-right: 10px
-      }
-
-      .togglerIndex {
-        margin-right: 0
-      }
-
-      .gridG123 .galeriaSlide {
-        display: flex;
-        grid-area: 1/1/4/3;
-        width: 100%;
-        margin: 0;
-        align-items: center;
-        padding-bottom: 0
-      }
-
-      .gridG123 .casilla1a {
-        grid-area: 4/1/5/2
-      }
-
-      .gridG123 .casilla2a {
-        grid-area: 4/2/5/3
-      }
-
-      .gridG123 .casilla3a {
-        grid-area: 5/1/6/2
-      }
-
-      .gridG123 .casilla1b {
-        grid-area: 5/2/6/3
-      }
-
-      .gridG123 .casilla2b {
-        grid-area: 6/1/7/2
-      }
-
-      .gridG123 .casilla3b {
-        grid-area: 6/2/7/3
-      }
-
-      .gridG123 .casilla1c {
-        grid-area: 7/1/8/2
-      }
-
-      .gridG123 .casilla2c {
-        grid-area: 7/2/8/3
-      }
-
-      .gridG123 .casilla3c {
-        grid-area: 8/1/9/2
-      }
-
-      .gridG123 .casilla1d {
-        grid-area: 8/2/9/3
-      }
-
-      .gridG123 .casilla2d {
-        grid-area: 9/1/10/3;
-        max-height: 123px;
-        overflow: hidden
+        margin-right: 10
       }
     }
 
-    @media only screen and (min-width:0px) and (max-width:991px) {
+    @media only screen and (min-width:0px) and (max-width:1100px) {
+      .containerIndex div .carousel-item img {
+        min-height: 1024px !important
+      }
+    }
+
+    @media only screen and (min-width: 0px) and (max-width: 991px) {
+
+
       .navIndex {
-        padding: .45rem 1.77rem 2rem .8rem
+
+        padding: .45rem 1.1rem 2rem .8rem
       }
     }
 
@@ -561,25 +405,7 @@
       }
 
       .navIndex {
-        padding: .45rem 1.77rem 2rem 0
-      }
-    }
-
-    @media only screen and (min-width:800px) and (max-width:1100px) {
-      .h1Index {
-        position: absolute;
-        color: #fff;
-        margin-left: 10px;
-        z-index: 9999;
-        top: 10px;
-        left: 27%;
-        padding-top: 5px
-      }
-    }
-
-    @media only screen and (min-width:0px) and (max-width:1100px) {
-      .containerIndex div .carousel-item img {
-        min-height: 1024px !important
+        padding: .45rem 1.1rem 2rem 0
       }
     }
 
@@ -595,6 +421,26 @@
       }
     }
 
+    @media only screen and (min-width:800px) and (max-width:990px) {
+      .h1Index {
+        position: absolute;
+        color: #fff;
+        margin-left: 10px;
+        z-index: 9999;
+        top: 10px;
+        left: 50%;
+        padding-top: 5px
+      }
+    }
+
+    @media only screen and (max-height: 823px) and (max-width: 1100px) {
+
+      .containerIndex div .carousel-item img {
+        min-height: 823px !important;
+
+      }
+    }
+
     .containerIndex {
       position: fixed;
       top: 0;
@@ -607,14 +453,16 @@
     }
 
     .containerIndex div .carousel-item img {
-      width: 100%;
-      min-height: 685px;
+      width: 1750px;
+      height: 800px;
       object-fit: cover;
-      object-position: top
+      object-position: 57% 0
     }
-  </style> -->
 
-
+    .carousel-item {
+      display: visible
+    }
+  </style>
   <!-- CSS Propio -->
   <noscript>
     <link rel="stylesheet" href="css/style.css" media="print" onload="this.media='all'; this.onload=null">

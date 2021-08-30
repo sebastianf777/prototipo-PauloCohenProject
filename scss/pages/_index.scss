@@ -8,7 +8,7 @@
     top: 0px;
     width: 100%;
     z-index: 2;
-    padding: 2.1rem 6rem 2rem 3rem;
+    padding: 2.3rem 5rem 2rem 3rem;
 
     a .logoIndex {
         cursor: default;
@@ -38,10 +38,10 @@
 }
 
 .h1Index{
-    @include h1(relative, white, 1%, 9999, 1%, 14%, 5px);
+    @include h1(relative, white, 3%, 9999, 0, 0, 0);
     cursor: default;
     width: 100px;
-    right: 0;
+    
 }
 
 .footerIndex {
